@@ -62,10 +62,10 @@ const pages = [
   },
   {
     file: 'wastewater-removal.html',
-    title: 'Wastewater Removal in Huffman, TX | A-VAC Septic',
-    description: 'Arrange non-hazardous wastewater removal from septic and holding tanks in Huffman and nearby Northeast Houston communities. Learn what details A-VAC Septic needs to plan pickup.',
-    eyebrow: 'Wastewater removal',
-    heading: 'Wastewater Removal in Huffman, TX',
+    title: 'Septic Waste Disposal in Huffman, TX | A-VAC Septic',
+    description: 'Arrange removal, transport, and proper disposal of non-hazardous waste from septic and holding tanks in Huffman and nearby Northeast Houston communities.',
+    eyebrow: 'Septic waste disposal',
+    heading: 'Septic Waste Disposal in Huffman, TX',
     lead: 'A-VAC arranges removal and transport of non-hazardous wastewater from septic and holding tanks for homes and businesses around Huffman and Northeast Houston.',
     image: '/images/img3.png',
     imageAlt: 'Wastewater service equipment',
@@ -113,7 +113,7 @@ function render(page) {
   <title>${esc(page.title)}</title>
   <meta name="description" content="${esc(page.description)}">
   <link rel="canonical" href="${url}">
-  <link rel="icon" type="image/png" href="/images/logo.png">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
