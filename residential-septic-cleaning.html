@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Residential Septic Tank Pumping & Cleaning | A-VAC Septic – Huffman, TX</title>
+  <meta name="description" content="Professional residential septic tank pumping and cleaning in Huffman, Crosby, Atascocita, Kingwood, and Northeast Houston. Family-owned for 30+ years. Fast, clean, honest pricing." />
+  <link rel="canonical" href="https://www.avacseptic.com/residential-septic-cleaning.html"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    /* =============================================
+       RESET + VARIABLES
+    ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:      #05284D;
+      --navy-mid:  #073a6e;
+      --navy-deep: #031a33;
+      --gold:      #ed242b;
+      --gold-dim:  rgba(237,36,43,0.16);
+      --gold-faint:rgba(237,36,43,0.07);
+      --white-92:  rgba(255,255,255,0.92);
+      --white-75:  rgba(255,255,255,0.75);
+      --white-55:  rgba(255,255,255,0.55);
+      --white-10:  rgba(255,255,255,0.10);
+      --white-06:  rgba(255,255,255,0.06);
+      --white-03:  rgba(255,255,255,0.03);
+      --section-pad-x: clamp(1.25rem, 5vw, 5rem);
+      --radius-card: 14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Lexend, sans-serif;
+      background: var(--navy);
+      color: var(--white-92);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    /* =============================================
+       TYPOGRAPHY
+    ============================================= */
+    .eyebrow {
+      display: inline-block;
+      font-family: "Exo 2", sans-serif;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Exo 2", sans-serif;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: .02em;
+      color: #fff;
+    }
+
+    h1 { font-size: clamp(2rem, 4.5vw, 3.4rem); }
+    h2 { font-size: clamp(1.65rem, 3vw, 2.5rem); }
+    h3 { font-size: clamp(1.1rem, 1.7vw, 1.4rem); }
+
+    /* =============================================
+       BUTTONS
+    ============================================= */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .8rem 1.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(237,36,43,0.55);
+      background: var(--gold-dim);
+      color: #fff;
+      font-family: Lexend, sans-serif;
+      font-weight: 600;
+      font-size: .95rem;
+      cursor: pointer;
+      transition: background .18s ease, transform .18s ease, box-shadow .18s ease;
+    }
+    .btn-primary:hover {
+      background: rgba(237,36,43,0.28);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 34px rgba(237,36,43,0.20);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .8rem 1.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--white-10);
+      background: var(--white-06);
+      color: var(--white-75);
+      font-family: Lexend, sans-serif;
+      font-size: .95rem;
+      cursor: pointer;
+      transition: border-color .18s ease, color .18s ease;
+    }
+    .btn-ghost:hover { border-color: rgba(255,255,255,0.28); color: #fff; }
+
+    /* =============================================
+       NAVBAR
+    ============================================= */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(5,40,77,0.94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--white-10);
+    }
+
+    .navbar-inner {
+      max-width: 1600px;
+      margin-inline: auto;
+      padding: .85rem var(--section-pad-x);
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-logo img { height: 44px; width: auto; }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      margin-left: auto;
+    }
+
+    .nav-links a {
+      font-size: .95rem;
+      font-weight: 500;
+      color: var(--white-75);
+      transition: color .18s ease;
+    }
+
+    .nav-links a:hover { color: #fff; }
+
+    .has-dropdown { position: relative; }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + .5rem);
+      left: 0;
+      min-width: 210px;
+      background: rgba(5,40,77,0.97);
+      border: 1px solid var(--white-10);
+      border-radius: var(--radius-card);
+      padding: .5rem 0;
+      backdrop-filter: blur(18px);
+    }
+
+    .has-dropdown:hover .dropdown { display: grid; }
+
+    .dropdown a {
+      display: block;
+      padding: .6rem 1rem;
+      font-size: .9rem;
+      color: var(--white-75);
+    }
+
+    .dropdown a:hover,
+    .dropdown a[aria-current="page"] { color: #fff; background: var(--white-06); }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      padding: .55rem 1.1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(237,36,43,0.55);
+      background: var(--gold-dim);
+      color: #fff;
+      font-size: .9rem;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: background .18s ease, border-color .18s ease;
+    }
+
+    .nav-cta:hover {
+      background: rgba(237,36,43,0.28);
+      border-color: var(--gold);
+    }
+
+    /* =============================================
+       BREADCRUMB
+    ============================================= */
+    .breadcrumb {
+      background: var(--navy-deep);
+      border-bottom: 1px solid var(--white-10);
+      padding: .6rem var(--section-pad-x);
+    }
+
+    .breadcrumb__inner {
+      max-width: 1600px;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .8rem;
+      color: var(--white-55);
+    }
+
+    .breadcrumb__inner a { color: var(--white-55); transition: color .15s; }
+    .breadcrumb__inner a:hover { color: #fff; }
+    .breadcrumb__sep { opacity: .4; }
+    .breadcrumb__current { color: var(--white-75); }
+
+    /* =============================================
+       HERO
+    ============================================= */
+    .hero-service {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(4rem, 9vw, 7rem) 0 clamp(3rem, 7vw, 5.5rem);
+    }
+
+    /* layered background atmosphere */
+    .hero-service::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 90% 70% at 80% -5%, rgba(237,36,43,0.09) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 80% at -5% 60%, rgba(35,118,170,0.14) 0%, transparent 65%);
+    }
+
+    /* subtle diagonal rule */
+    .hero-service::after {
+      content: "";
+      position: absolute;
+      top: 0; right: 0;
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent, rgba(237,36,43,0.18), transparent);
+      pointer-events: none;
+    }
+
+    .hero-service__inner {
+      position: relative;
+      max-width: 1600px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+    }
+
+    .hero-service__content .eyebrow { margin-bottom: .6rem; }
+
+    .hero-service__title {
+      text-wrap: balance;
+      margin-top: .35rem;
+    }
+
+    .hero-service__lead {
+      margin-top: 1.1rem;
+      font-size: clamp(1rem, 1.7vw, 1.25rem);
+      color: var(--white-75);
+      line-height: 1.6;
+      max-width: 55ch;
+    }
+
+    /* trust badges row */
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      margin-top: 1.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .4rem .75rem;
+      border-radius: 999px;
+      border: 1px solid var(--white-10);
+      background: var(--white-06);
+      font-size: .82rem;
+      color: var(--white-75);
+      font-weight: 500;
+    }
+
+    .badge__dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .hero-service__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin-top: 2rem;
+    }
+
+    /* hero image */
+    .hero-service__visual {
+      position: relative;
+    }
+
+    .hero-service__img-frame {
+      position: relative;
+      border-radius: clamp(18px, 2.5vw, 28px);
+      overflow: hidden;
+      border: 1px solid var(--white-10);
+      background: var(--white-03);
+    }
+
+    .hero-service__img-frame img {
+      width: 100%;
+      height: clamp(320px, 42vw, 560px);
+      object-fit: cover;
+      object-position: center 25%;
+      filter: contrast(1.04) saturate(1.05);
+      transition: transform .6s ease;
+    }
+
+    .hero-service__img-frame:hover img { transform: scale(1.03); }
+
+    /* gold accent bar */
+    .hero-service__img-frame::after {
+      content: "";
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--gold), transparent 80%);
+    }
+
+    /* floating info chip */
+    .hero-chip {
+      position: absolute;
+      bottom: -1rem;
+      left: -1rem;
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .7rem 1rem;
+      border-radius: var(--radius-card);
+      background: rgba(5,40,77,0.92);
+      border: 1px solid var(--white-10);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+    }
+
+    .hero-chip__icon { font-size: 1.5rem; }
+
+    .hero-chip__label {
+      font-family: "Exo 2", sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero-chip__value {
+      font-size: .88rem;
+      color: var(--white-75);
+    }
+
+    /* =============================================
+       PROCESS SECTION
+    ============================================= */
+    .section-process {
+      padding: clamp(4rem, 8vw, 7rem) 0;
+      background: var(--navy-mid);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-process::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(ellipse 55% 70% at 5% 50%, rgba(35,118,170,0.1) 0%, transparent 65%);
+    }
+
+    .process-inner {
+      position: relative;
+      max-width: 1600px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+    }
+
+    .section-header {
+      margin-bottom: clamp(2.5rem, 5vw, 4rem);
+      max-width: 70ch;
+    }
+
+    .section-header .lead {
+      margin-top: .9rem;
+      font-size: clamp(1rem, 1.7vw, 1.2rem);
+      color: var(--white-75);
+      line-height: 1.55;
+    }
+
+    /* step grid */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: clamp(1.25rem, 2.5vw, 1.75rem);
+      counter-reset: step;
+    }
+
+    .process-step {
+      counter-increment: step;
+      position: relative;
+      padding: clamp(1.4rem, 2.5vw, 2rem);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--white-10);
+      background: var(--white-03);
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+      overflow: hidden;
+    }
+
+    .process-step:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255,255,255,0.15);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.4);
+    }
+
+    /* big ghost number behind content */
+    .process-step::before {
+      content: counter(step, decimal-leading-zero);
+      position: absolute;
+      top: -.3rem;
+      right: .75rem;
+      font-family: "Exo 2", sans-serif;
+      font-size: 5.5rem;
+      font-weight: 900;
+      line-height: 1;
+      color: rgba(237,36,43,0.06);
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .process-step__icon {
+      font-size: 1.8rem;
+      margin-bottom: .85rem;
+    }
+
+    .process-step__title {
+      font-size: clamp(1rem, 1.4vw, 1.2rem);
+      margin-bottom: .5rem;
+    }
+
+    .process-step__desc {
+      color: var(--white-75);
+      font-size: .9rem;
+      line-height: 1.55;
+    }
+
+    /* =============================================
+       WHY CHOOSE US
+    ============================================= */
+    .section-why {
+      padding: clamp(4rem, 8vw, 7rem) 0;
+    }
+
+    .why-inner {
+      max-width: 1600px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+      gap: clamp(2.5rem, 6vw, 6rem);
+      align-items: center;
+    }
+
+    /* checklist */
+    .why-list {
+      list-style: none;
+      display: grid;
+      gap: 1.1rem;
+      margin-top: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .why-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 1.15rem;
+      border-radius: var(--radius-card);
+      border: 1px solid var(--white-10);
+      background: var(--white-03);
+      transition: border-color .2s ease, background .2s ease;
+    }
+
+    .why-item:hover {
+      border-color: rgba(237,36,43,0.22);
+      background: var(--gold-faint);
+    }
+
+    .why-item__check {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--gold-dim);
+      border: 1px solid rgba(237,36,43,0.30);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: .85rem;
+      margin-top: .1rem;
+    }
+
+    .why-item__text strong {
+      display: block;
+      font-family: "Exo 2", sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: .2rem;
+    }
+
+    .why-item__text span {
+      font-size: .88rem;
+      color: var(--white-55);
+      line-height: 1.5;
+    }
+
+    /* image panel */
+    .why-image {
+      position: relative;
+      border-radius: clamp(18px, 2.5vw, 26px);
+      overflow: hidden;
+      border: 1px solid var(--white-10);
+    }
+
+    .why-image img {
+      width: 100%;
+      height: clamp(300px, 42vw, 540px);
+      object-fit: cover;
+      object-position: center 30%;
+    }
+
+    /* stacked accent card */
+    .why-accent {
+      position: absolute;
+      top: 1.5rem;
+      right: -1rem;
+      padding: .85rem 1.1rem;
+      border-radius: var(--radius-card);
+      background: rgba(5,40,77,0.93);
+      border: 1px solid rgba(237,36,43,0.28);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.45);
+      text-align: center;
+    }
+
+    .why-accent__num {
+      font-family: "Exo 2", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .why-accent__label {
+      font-size: .75rem;
+      color: var(--white-55);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-top: .25rem;
+    }
+
+    /* =============================================
+       SERVICE AREAS
+    ============================================= */
+    .section-areas {
+      padding: clamp(3.5rem, 7vw, 5.5rem) 0;
+      background: var(--navy-mid);
+      border-top: 1px solid var(--white-10);
+      border-bottom: 1px solid var(--white-10);
+    }
+
+    .areas-inner {
+      max-width: 1600px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+    }
+
+    .areas-label {
+      max-width: 26ch;
+    }
+
+    .areas-label h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
+
+    .areas-label p {
+      margin-top: .75rem;
+      color: var(--white-75);
+      font-size: .95rem;
+      line-height: 1.55;
+    }
+
+    .areas-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .65rem;
+    }
+
+    .area-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .55rem 1rem;
+      border-radius: 999px;
+      border: 1px solid var(--white-10);
+      background: var(--white-03);
+      font-size: .9rem;
+      color: var(--white-75);
+      font-weight: 500;
+      transition: border-color .18s ease, color .18s ease, background .18s ease;
+    }
+
+    .area-chip:hover {
+      border-color: rgba(237,36,43,0.35);
+      color: #fff;
+      background: var(--gold-faint);
+    }
+
+    .area-chip__pin { font-size: .8rem; }
+
+    /* =============================================
+       FAQ
+    ============================================= */
+    .section-faq {
+      padding: clamp(4rem, 8vw, 7rem) 0;
+    }
+
+    .faq-inner {
+      max-width: 900px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+    }
+
+    .faq-inner .section-header { margin-bottom: clamp(2rem, 4vw, 3rem); }
+
+    .faq-list { display: grid; gap: .75rem; }
+
+    .faq-item {
+      border-radius: var(--radius-card);
+      border: 1px solid var(--white-10);
+      background: var(--white-03);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.1rem 1.3rem;
+      cursor: pointer;
+      font-family: "Exo 2", sans-serif;
+      font-weight: 700;
+      font-size: clamp(.95rem, 1.4vw, 1.1rem);
+      color: var(--white-92);
+      user-select: none;
+      transition: color .18s ease;
+      list-style: none;
+    }
+
+    .faq-question::-webkit-details-marker { display: none; }
+    .faq-item[open] .faq-question { color: #fff; }
+
+    .faq-chevron {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1px solid var(--white-10);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: .75rem;
+      transition: transform .25s ease, background .18s ease;
+    }
+
+    .faq-item[open] .faq-chevron {
+      transform: rotate(180deg);
+      background: var(--gold-dim);
+      border-color: rgba(237,36,43,0.3);
+    }
+
+    .faq-answer {
+      padding: 0 1.3rem 1.2rem;
+      color: var(--white-75);
+      font-size: .93rem;
+      line-height: 1.65;
+    }
+
+    /* =============================================
+       CTA STRIP
+    ============================================= */
+    .section-cta {
+      padding: clamp(4rem, 8vw, 6rem) 0;
+      background: var(--navy-deep);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-cta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 90% at 50% 50%, rgba(237,36,43,0.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .cta-inner {
+      position: relative;
+      max-width: 680px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+    }
+
+    .cta-inner h2 { text-wrap: balance; }
+
+    .cta-inner p {
+      margin-top: 1rem;
+      color: var(--white-75);
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      line-height: 1.55;
+    }
+
+    .cta-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .85rem;
+      justify-content: center;
+      margin-top: 2.25rem;
+    }
+
+    /* phone emphasis */
+    .cta-phone {
+      display: block;
+      margin-top: 1.5rem;
+      font-family: "Exo 2", sans-serif;
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 900;
+      color: var(--gold);
+      letter-spacing: .04em;
+      transition: opacity .18s ease;
+    }
+
+    .cta-phone:hover { opacity: .8; }
+
+    /* =============================================
+       FOOTER
+    ============================================= */
+    .site-footer {
+      background: var(--navy);
+      color: var(--white-92);
+      padding: clamp(2.5rem, 5vw, 4rem) 0 1.25rem;
+      border-top: 1px solid var(--white-10);
+    }
+
+    .site-footer *, .site-footer *::before, .site-footer *::after { box-sizing: border-box; }
+
+    .footer-inner {
+      max-width: 1600px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1.25rem, 3vw, 2rem);
+    }
+
+    .footer-cta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: .9rem;
+      padding: clamp(.85rem, 1.6vw, 1.15rem);
+      border-radius: 14px;
+      background: var(--white-06);
+      border: 1px solid var(--white-10);
+    }
+
+    .footer-cta__text h3 { font-size: clamp(1rem, 1.6vw, 1.25rem); margin: 0; }
+    .footer-cta__text p { margin: .3rem 0 0; font-size: .9rem; color: var(--white-75); }
+    .footer-cta__actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+
+    .footer-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: .55rem .85rem;
+      border-radius: 999px;
+      background: var(--white-06);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: var(--white-92);
+      font-size: .9rem;
+      white-space: nowrap;
+      transition: background .18s ease;
+    }
+
+    .footer-btn--primary {
+      background: var(--gold-dim);
+      border-color: rgba(237,36,43,0.45);
+    }
+
+    .footer-btn:hover { background: rgba(255,255,255,0.10); }
+    .footer-btn--primary:hover { background: rgba(237,36,43,0.28); }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.2fr);
+      gap: clamp(1.25rem, 3vw, 2rem);
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--white-10);
+    }
+
+    .footer-col { display: grid; gap: .6rem; align-content: start; }
+
+    .footer-col a {
+      color: rgba(255,255,255,0.72);
+      font-size: .9rem;
+      transition: color .15s ease;
+    }
+
+    .footer-col a:hover { color: #fff; }
+
+    .footer-title {
+      font-family: "Exo 2", sans-serif;
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--white-92);
+      margin-bottom: .25rem;
+    }
+
+    .footer-logo { height: 44px; width: auto; }
+    .footer-tagline { color: var(--white-75); font-size: .9rem; line-height: 1.5; max-width: 38ch; }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: .75rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--white-10);
+      color: rgba(255,255,255,0.50);
+      font-size: .85rem;
+    }
+
+    .footer-bottom p { margin: 0; }
+    .footer-bottom__links { display: flex; gap: 1rem; }
+    .footer-bottom__links a { color: rgba(255,255,255,0.50); }
+
+    /* =============================================
+       ANIMATIONS
+    ============================================= */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-service__content > * {
+      opacity: 0;
+      animation: fadeUp .6s ease forwards;
+    }
+
+    .hero-service__content .eyebrow            { animation-delay: .05s; }
+    .hero-service__content h1                  { animation-delay: .15s; }
+    .hero-service__content .hero-service__lead { animation-delay: .25s; }
+    .hero-service__content .hero-badges        { animation-delay: .32s; }
+    .hero-service__content .hero-service__actions { animation-delay: .42s; }
+
+    .hero-service__visual {
+      opacity: 0;
+      animation: fadeUp .7s ease .3s forwards;
+    }
+
+    /* =============================================
+       RESPONSIVE
+    ============================================= */
+    @media (max-width: 980px) {
+      .hero-service__inner { grid-template-columns: 1fr; }
+      .hero-service__visual { order: -1; }
+      .hero-chip { bottom: .75rem; left: .75rem; }
+      .why-inner { grid-template-columns: 1fr; }
+      .why-image { order: -1; }
+      .why-accent { right: .75rem; top: .75rem; }
+      .areas-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+    }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .footer-cta { flex-direction: column; align-items: flex-start; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .process-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 1000px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-col:last-child { grid-column: 1 / -1; }
+    }
+  </style>
+  <link rel="stylesheet" href="/header.css">
+  <link rel="stylesheet" href="/septic-page-refine.css">
+  <style>
+    .breadcrumb { margin-top: var(--nav-h); }
+    .dropdown { display: block; }
+    .has-dropdown:focus-within .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+    @media (max-width: 640px) { .nav-links { display: flex; } }
+  </style>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Residential Septic Tank Pumping & Cleaning",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "A-VAC Septic",
+      "telephone": "+1-832-318-2256",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Huffman",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      }
+    },
+    "areaServed": ["Huffman TX","Crosby TX","Atascocita TX","Kingwood TX","Northeast Houston TX"],
+    "description": "Professional residential septic tank pumping, cleaning, and maintenance services for homeowners in the Huffman and Northeast Houston area."
+  }
+  </script>
+  <link rel="stylesheet" href="/site-shell.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <!-- shared:header:start -->
+<header class="navbar site-header">
+  <div class="navbar-inner">
+    <a class="nav-logo" href="/index.html" aria-label="A-VAC Septic home"><img src="/images/logo.png" alt="A-VAC Septic"></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="/about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="/services.html">Services</a>
+          <div class="dropdown">
+            <a href="/residential-septic-cleaning.html">Residential Septic Cleaning</a>
+            <a href="/commercial-septic-cleaning.html">Commercial Septic Cleaning</a>
+            <a href="/septic-pumping.html">Septic Pumping</a>
+            <a href="/septic-tank-cleaning.html">Septic Tank Cleaning</a>
+            <a href="/contact.html">Emergency Pump-Outs</a>
+            <a href="/wastewater-removal.html">Septic Waste Disposal</a>
+            <a href="/index.html#septic-cleaning">System Maintenance</a>
+          </div>
+        </li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="tel:+18323182256">Call Now</a>
+  </div>
+</header>
+<!-- shared:header:end -->
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="breadcrumb__inner">
+      <a href="/index.html">Home</a>
+      <span class="breadcrumb__sep">›</span>
+      <a href="/services.html">Services</a>
+      <span class="breadcrumb__sep">›</span>
+      <span class="breadcrumb__current">Residential Septic Cleaning</span>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================
+         HERO
+    ============================ -->
+    <section class="hero-service" id="top">
+      <div class="hero-service__inner">
+
+        <div class="hero-service__content">
+          <span class="eyebrow">Residential Service</span>
+          <h1 class="hero-service__title">Residential Septic Tank Pumping &amp; Cleaning</h1>
+          <p class="hero-service__lead">
+            A-VAC pumps accumulated liquid and solids from residential septic tanks and
+            cleans settled buildup. We serve homeowners in Huffman and nearby Northeast
+            Houston communities.
+          </p>
+
+          <p class="hero-service__facts">Family owned · Serving Northeast Houston for 30+ years</p>
+
+          <div class="hero-service__actions">
+            <a class="btn-primary" href="/contact.html">Schedule a Service</a>
+            <a class="btn-ghost" href="tel:+18323182256">(832) 318-2256</a>
+          </div>
+        </div>
+
+        <div class="hero-service__visual">
+          <div class="hero-service__img-frame">
+            <img
+              src="/images/img1.png"
+              alt="A-VAC Septic technician performing residential septic pumping"
+              loading="eager"
+            >
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================
+         HOW IT WORKS
+    ============================ -->
+    <section class="section-process" id="process">
+      <div class="process-inner">
+
+        <header class="section-header">
+          <span class="eyebrow">The Process</span>
+          <h2>What Happens During a Residential Septic Pump-Out?</h2>
+          <p class="lead">
+            The work includes tank access, pump-out, a check for visible concerns, and
+            cleanup before the technician leaves.
+          </p>
+        </header>
+
+        <figure class="process-photo">
+          <img src="/images/img2.jpeg" alt="Septic service truck at a residential property" loading="lazy">
+        </figure>
+
+        <div class="process-grid">
+
+          <div class="process-step">
+            <h3 class="process-step__title">Locate &amp; Access</h3>
+            <p class="process-step__desc">
+              Our technician locates your septic tank access lids, carefully removes the covers,
+              and assesses the tank condition before any work begins.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <h3 class="process-step__title">Pump &amp; Remove</h3>
+            <p class="process-step__desc">
+              Using our modern vacuum trucks, we pump out all liquid and solid waste from
+              your septic tank completely — no shortcuts, no partial pumps.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <h3 class="process-step__title">Inspect</h3>
+            <p class="process-step__desc">
+              After pumping, we inspect the tank's walls, baffles, and inlet/outlet pipes
+              for any visible damage, cracks, or issues that may need attention.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <h3 class="process-step__title">Proper Disposal</h3>
+            <p class="process-step__desc">
+              All waste is transported to a state-approved treatment facility with full
+              regulatory compliance and documentation for your records.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <h3 class="process-step__title">Final Report</h3>
+            <p class="process-step__desc">
+              We replace lids, clean up the work area, and walk you through what we found
+              — including any recommendations to keep your system healthy.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================
+         WHY CHOOSE US
+    ============================ -->
+    <section class="section-why" id="why">
+      <div class="why-inner">
+
+        <div class="why-content">
+          <header class="section-header">
+            <span class="eyebrow">Why A-VAC Septic</span>
+            <h2>What homeowners can expect</h2>
+          </header>
+
+          <ul class="why-list" role="list">
+
+            <li class="why-item">
+              <div class="why-item__text">
+                <strong>Scheduling and access</strong>
+                <span>Tell us where the tank is located and how to access it. We’ll discuss timing when you request service.</span>
+              </div>
+            </li>
+
+            <li class="why-item">
+              <div class="why-item__text">
+                <strong>Clear scope and pricing</strong>
+                <span>Tank size, access, and the work needed affect the quote. We’ll review the scope and pricing with you before service.</span>
+              </div>
+            </li>
+
+            <li class="why-item">
+              <div class="why-item__text">
+                <strong>Property care</strong>
+                <span>Our team replaces tank lids and cleans the immediate work area after the pump-out.</span>
+              </div>
+            </li>
+
+            <li class="why-item">
+              <div class="why-item__text">
+                <strong>Local, family-owned team</strong>
+                <span>Founded by the Wolf family, A-VAC has served the Huffman area for more than 30 years.</span>
+              </div>
+            </li>
+
+            <li class="why-item">
+              <div class="why-item__text">
+                <strong>Proper waste handling</strong>
+                <span>Collected septic waste is transported for disposal at an approved treatment facility.</span>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="why-image">
+          <img
+            src="/images/A-Vac Family.jpg"
+            alt="A-VAC Septic team serving residential customers in Huffman TX"
+            loading="lazy"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================
+         SERVICE AREAS
+    ============================ -->
+    <section class="section-areas" id="areas">
+      <div class="areas-inner">
+
+        <div class="areas-label">
+          <span class="eyebrow">Where We Serve</span>
+          <h2>Residential Septic Service Near You</h2>
+          <p>Proudly serving homeowners across Northeast Houston and surrounding communities.</p>
+        </div>
+
+        <div class="areas-chips">
+          <span class="area-chip">Huffman, TX</span>
+          <span class="area-chip">Crosby, TX</span>
+          <span class="area-chip">Atascocita, TX</span>
+          <span class="area-chip">Kingwood, TX</span>
+          <span class="area-chip">Humble, TX</span>
+          <span class="area-chip">Lake Houston Area</span>
+          <span class="area-chip">Baytown, TX</span>
+          <span class="area-chip">Porter, TX</span>
+          <span class="area-chip">New Caney, TX</span>
+          <span class="area-chip">Northeast Houston</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================
+         FAQ
+    ============================ -->
+    <section class="section-faq" id="faq">
+      <div class="faq-inner">
+
+        <header class="section-header">
+          <span class="eyebrow">Common Questions</span>
+          <h2>Residential Septic FAQs</h2>
+          <p class="lead">Answers to the questions we hear most from homeowners.</p>
+        </header>
+
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              How often should I have my septic tank pumped?
+              <span class="faq-chevron" aria-hidden="true">+</span>
+            </summary>
+            <p class="faq-answer">
+              Most households should have their septic tank pumped every 3 to 5 years.
+              The exact frequency depends on the size of your tank, the number of people
+              in your home, and your water usage habits. A-VAC can help you determine the
+              right schedule for your specific system.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              What are the warning signs my septic tank needs pumping?
+              <span class="faq-chevron" aria-hidden="true">+</span>
+            </summary>
+            <p class="faq-answer">
+              Common signs include slow-draining sinks and toilets, gurgling sounds in
+              your plumbing, sewage odors inside or outside your home, wet or unusually
+              lush patches of grass over the drain field, and sewage backup in your drains.
+              Don't wait — early service prevents costly repairs.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              How long does a residential septic pump-out take?
+              <span class="faq-chevron" aria-hidden="true">+</span>
+            </summary>
+            <p class="faq-answer">
+              A standard residential septic pumping job typically takes between 30 minutes
+              and 2 hours, depending on the tank size, accessibility, and current condition.
+              We'll give you a realistic time estimate when you book your appointment.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              Do I need to be home during the service?
+              <span class="faq-chevron" aria-hidden="true">+</span>
+            </summary>
+            <p class="faq-answer">
+              It's helpful to have someone on-site who can show our technician where
+              the tank is located and answer any questions. However, if you know the
+              tank location and we have access, we can coordinate accordingly. Just call
+              us to discuss your situation.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              How much does residential septic pumping cost in Huffman, TX?
+              <span class="faq-chevron" aria-hidden="true">+</span>
+            </summary>
+            <p class="faq-answer">
+              Pricing depends on tank size, location, and accessibility. We believe in
+              honest, upfront quotes — call us or request a service online and we'll
+              give you a clear price before any work begins. No surprise fees.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              What happens to the waste after it's pumped?
+              <span class="faq-chevron" aria-hidden="true">+</span>
+            </summary>
+            <p class="faq-answer">
+              All septic waste is transported in our sealed vacuum trucks and delivered
+              to a state-approved treatment facility for proper processing. We maintain
+              full documentation for regulatory compliance.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================
+         CTA
+    ============================ -->
+    <section class="section-cta" id="contact">
+      <div class="cta-inner">
+        <span class="eyebrow">Ready to Book?</span>
+        <h2>Schedule Your Residential Septic Pumping Today</h2>
+        <p>
+          Serving Huffman, Crosby, Atascocita, Kingwood, and all surrounding
+          Northeast Houston communities. Fast scheduling, honest pricing, family service.
+        </p>
+        <div class="cta-btns">
+          <a class="btn-primary" href="/contact.html">Request Service Online</a>
+          <a class="btn-ghost" href="/contact.html">Need Emergency Help?</a>
+        </div>
+        <a class="cta-phone" href="tel:+18323182256">(832) 318-2256</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <!-- shared:footer:start -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-cta">
+      <div class="footer-cta__text"><h3>Need septic service?</h3><p>Septic pumping and cleaning in Huffman, TX and surrounding areas.</p></div>
+      <div class="footer-cta__actions"><a class="footer-btn footer-btn--primary" href="/contact.html">Request Service</a><a class="footer-btn" href="tel:+18323182256">(832) 318-2256</a></div>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-col"><a href="/index.html"><img class="footer-logo" src="/images/logo.png" alt="A-VAC Septic home"></a><p class="footer-tagline">Family-owned septic and wastewater service for homes and businesses in Northeast Houston.</p></div>
+      <nav class="footer-col" aria-label="Footer navigation"><h4 class="footer-title">Company</h4><a href="/about.html">About</a><a href="/services.html">Services</a><a href="/index.html#service-area">Service Area</a><a href="/contact.html">Contact</a></nav>
+      <nav class="footer-col" aria-label="Footer services"><h4 class="footer-title">Services</h4><a href="/residential-septic-cleaning.html">Residential Septic Cleaning</a><a href="/commercial-septic-cleaning.html">Commercial Septic Cleaning</a><a href="/septic-pumping.html">Septic Pumping</a><a href="/septic-tank-cleaning.html">Septic Tank Cleaning</a><a href="/wastewater-removal.html">Septic Waste Disposal</a></nav>
+      <div class="footer-col"><h4 class="footer-title">Contact</h4><a href="tel:+18323182256">(832) 318-2256</a><a href="mailto:info@avacseptic.com">info@avacseptic.com</a><a href="https://maps.google.com/?q=25727+Lakewater+Huffman+TX+77336" target="_blank" rel="noopener">25727 Lakewater, Huffman, TX 77336</a></div>
+    </div>
+    <div class="footer-bottom"><p>© <span class="site-year" id="year"></span> A-VAC Septic. All rights reserved.</p><div class="footer-bottom__links"><a href="https://www.avacseptic.com/privacy-policy">Privacy</a><a href="https://www.avacseptic.com/terms-and-conditions">Terms</a></div></div>
+  </div>
+</footer>
+<!-- shared:footer:end -->
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/site-shell.js"></script>
+</body>
+</html>

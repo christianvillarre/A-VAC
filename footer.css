@@ -1,0 +1,558 @@
+/* =========================================
+   FOOTER (matches your border-grid style)
+========================================= */
+.site-footer{
+  background:#000;
+  border-top: 1px solid rgba(255,255,255,0.35);
+}
+
+.footer-inner{
+  width:100%;
+  padding: 0 4rem;
+
+  display:grid;
+  grid-template-columns: 3fr 1.2fr 1.1fr; /* ~60% / ~20% / ~20% */
+  gap: 0; /* ✅ borders touch */
+  align-items: stretch;
+}
+
+/* ✅ make all columns behave like “slices” */
+.footer-col{
+  padding: 2.5rem 2rem;
+  min-height: 220px;
+}
+
+/* vertical divider lines that TOUCH */
+.footer-nav{
+  border-left: 1px solid rgba(255,255,255,0.35);
+}
+.footer-badges{
+  border-left: 1px solid rgba(255,255,255,0.35);
+}
+
+/* COL 1 */
+.footer-logo{
+  width: 160px;
+  height: auto;
+  display:block;
+  margin-bottom: 1.25rem;
+}
+
+/* social row */
+.footer-social{
+  display:flex;
+  gap: .8rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.social-btn{
+  width: 44px;
+  height: 44px;
+  display:grid;
+  place-items:center;
+
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.04);
+  transition: opacity .2s ease, border-color .2s ease, background .2s ease, transform .2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.social-btn svg{
+  width: 20px;
+  height: 20px;
+  fill: rgba(255,255,255,0.78);
+  transition: fill .2s ease;
+}
+@media (hover:hover) and (pointer:fine){
+  .social-btn:hover{
+    transform: translateY(-1px);
+    border-color: rgba(255,0,0,0.55);
+    background: rgba(64,0,0,0.28);
+  }
+  .social-btn:hover svg{ fill: rgba(255,255,255,0.95); }
+}
+
+/* COL 2 links */
+.footer-nav{
+  display:flex;
+  flex-direction:column;
+  gap: .9rem;
+}
+.footer-link{
+  position: relative;
+  color: rgba(255,255,255,0.75);
+  font-weight: 300;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+
+  transition: color 220ms cubic-bezier(.22,1,.36,1),
+              letter-spacing 220ms cubic-bezier(.22,1,.36,1),
+              opacity 220ms cubic-bezier(.22,1,.36,1);
+}
+.footer-link:hover{
+  color: rgba(255,255,255,0.95);
+  letter-spacing: .07em;
+  opacity: 1;
+}
+.footer-link::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0%;
+  height:1px;
+  background: red;
+  transition: width 260ms cubic-bezier(.22,1,.36,1);
+}
+.footer-link:hover::after{ width:100%; }
+
+/* COL 3 */
+.footer-badges{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap: 1.25rem;
+  align-items: flex-start;   /* ✅ this is the key */
+}
+.footer-badge{
+  width: 100%;
+  max-width: 240px;
+  opacity: 0.9;
+}
+
+/* bottom bar (borders touch + same vibe) */
+.footer-bottom{
+  padding: 1.1rem 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 1rem;
+}
+
+.footer-legal{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items:center;
+
+  color: rgba(255,255,255,0.55);
+  font-size: .95rem;
+  letter-spacing: .02em;
+}
+.footer-legal-link{
+  color: rgba(255,255,255,0.55);
+  transition: color .2s ease, opacity .2s ease;
+}
+.footer-legal-link:hover{ color: rgba(255,255,255,0.92); }
+
+.footer-copy{
+  color: rgba(255,255,255,0.55);
+  padding-right: 5rem;
+  border-right: rgba(255, 255, 255, 0.232) solid 1px;
+}
+
+/* Website by MCVDesign */
+.footer-credit{
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  font-size: .95rem;
+  letter-spacing: .02em;
+  transition: opacity .2s ease, color .2s ease, letter-spacing .2s ease;
+}
+.footer-credit span{ color: rgba(255,255,255,0.70); }
+.footer-credit:hover{
+  color: rgba(255,255,255,0.92);
+  letter-spacing: .04em;
+}
+.footer-credit:hover span{ color: rgb(255,0,0); }
+
+/* =========================================
+   FOOTER RESPONSIVE
+========================================= */
+@media (max-width: 980px){
+  .footer-inner{ padding: 0 1.25rem; }
+  .footer-bottom{ padding: 1.1rem 1.25rem; }
+}
+
+@media (max-width: 820px){
+  .footer-inner{
+    grid-template-columns: 1fr;
+  }
+  .footer-nav,
+  .footer-badges{
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,0.35); /* keep borders touching in stack */
+  }
+  .footer-col{ padding: 2rem 0; }
+  .footer-badge{ max-width: 220px; }
+  .footer-bottom{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+
+/* =========================================
+   FOOTER FORM STRIP (above footer)
+========================================= */
+.footer-form-strip{
+  background:#000;
+  
+  border-bottom: 1px solid rgba(255,255,255,0.35);
+}
+
+.footer-form-inner{
+  width:100%;
+  padding: 5.25rem 4rem;
+
+  display:grid;
+  grid-template-columns: 1.25fr 2fr;
+  gap: 0; /* ✅ borders touch */
+  align-items: stretch;
+}
+
+/* left copy */
+/* left copy */
+.footer-form-copy{
+  padding-right: 2rem;
+  height: 100%;
+  display: flex;            /* ✅ REQUIRED */
+  flex-direction: column;  /* stack content vertically */
+}
+
+.footer-form-title{
+  margin-top: .6rem;
+  font-size: clamp(1.6rem, 3.4vw, 2.6rem);
+  color: rgba(255,255,255,0.92);
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+
+.footer-form-desc{
+  margin-top: .9rem;
+  color: rgba(255,255,255,0.68);
+  max-width: 48ch;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+/* push employment link to bottom */
+
+
+/* optional hover style to match site */
+.form-employment a,
+.form-employment{
+  transition: color .2s ease, opacity .2s ease;
+}
+.form-employment:hover{
+  color: rgba(255,255,255,0.9);
+}
+/* right form area with border */
+.footer-form{
+  padding-left: 2rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.175);
+}
+
+/* field grid */
+.ff-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.ff-field{ display:flex; flex-direction:column; gap: .45rem; }
+.ff-field--full{ grid-column: 1 / -1; }
+
+.ff-label{
+  font-size: .85rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.58);
+}
+
+.ff-input{
+  width:100%;
+  border: 1px solid rgba(255, 255, 255, 0.399);
+  background: rgba(255, 0, 0, 0.04);
+  color: rgba(255,255,255,0.92);
+
+  padding: .85rem .9rem;
+  font: inherit;
+
+  outline: none;
+  transition: border-color .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+.ff-textarea{
+  resize: vertical;
+  min-height: 120px;
+}
+
+.ff-input:focus{
+  border-color: rgba(255,0,0,0.55);
+  background: rgba(64,0,0,0.22);
+  box-shadow: 0 0 0 3px rgba(255,0,0,0.14);
+}
+
+/* submit row */
+.ff-actions{
+  margin-top: 1rem;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  padding-top: 1rem;
+}
+
+/* Submit button styled exactly like footer-link */
+.ff-submit{
+  position: relative;
+  display: inline-flex;
+  align-items: center;        /* keeps arrow perfectly aligned */
+  gap: .55rem;               /* spacing between text & arrow */
+  width: 100%;
+  max-width: 250px;
+  padding: 0;
+  background: none;
+  border: none;
+
+  color: rgb(255, 60, 60);   /* 🔴 red by default */
+  font: inherit;
+  font-weight: 300;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+
+  transition:
+    color 220ms cubic-bezier(.22,1,.36,1),
+    letter-spacing 220ms cubic-bezier(.22,1,.36,1),
+    opacity 220ms cubic-bezier(.22,1,.36,1);
+}
+
+/* underline */
+.ff-submit::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0%;
+  height:1px;
+  background: red;
+  transition: width 260ms cubic-bezier(.22,1,.36,1);
+}
+
+/* arrow sizing & alignment */
+.ff-submit .ff-arrow{
+  width: 14px;
+  height: 14px;
+  display: block;
+  object-fit: contain;
+  transform: translateY(3px); /* micro baseline fix */
+
+  /* make arrow red */
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(18%)
+    sepia(94%)
+    saturate(7480%)
+    hue-rotate(355deg)
+    brightness(102%)
+    contrast(110%);
+
+  transition: transform 220ms cubic-bezier(.22,1,.36,1);
+}
+
+/* hover */
+@media (hover:hover) and (pointer:fine){
+  .ff-submit:hover{
+    color: rgba(255,255,255,0.95); /* optional: white on hover */
+    letter-spacing: .07em;
+  }
+
+  .ff-submit:hover::after{
+    width:100%;
+  }
+
+  .ff-submit:hover .ff-arrow{
+    transform: translate(3px, 1px);
+    filter: none; /* arrow turns white */
+    transform: translateY(3px);
+  }
+}
+
+/* keyboard accessibility */
+.ff-submit:focus-visible{
+  outline: none;
+}
+/* keyboard accessibility */
+.ff-submit:focus-visible{
+  outline:none;
+}
+
+.ff-note{
+  margin: 0;
+  color: rgba(255,255,255,0.55);
+  font-size: .95rem;
+  line-height: 1.3;
+  max-width: 46ch;
+}
+
+/* responsive */
+@media (max-width: 980px){
+  .footer-form-inner{
+    padding: 2.5rem 1.25rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .footer-form{
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,0.10);
+    padding-top: 1.5rem;
+  }
+  .footer-form-copy{ padding-right: 0; }
+}
+
+@media (max-width: 640px){
+  .ff-grid{ grid-template-columns: 1fr; }
+  .ff-actions{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.footer-badge.f1 {
+    scale: 0.8;
+}
+
+
+
+
+/* make col 1 able to push contact to bottom if you want */
+.footer-brand{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+/* contact block */
+.footer-contact{
+  /*margin-top: auto;              /* ✅ pushes to bottom of col 1 */
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.011);
+  width: 100%;
+  max-width: 520px;
+  display:flex;
+  flex-direction:column;
+  gap: .75rem;
+}
+
+.footer-contact__item{
+  display:flex;
+  align-items:flex-start;
+  gap: .75rem;
+
+  color: rgba(255,255,255,0.70);
+  font-size: .98rem;
+  letter-spacing: .02em;
+  line-height: 1.35;
+
+  transition: color .2s ease, opacity .2s ease;
+}
+
+.footer-contact__item:hover{
+  color: rgba(255,255,255,0.92);
+}
+
+.footer-contact__icon{
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  margin-top: 2px;
+  color: rgba(255,0,0,0.85);  /* subtle red accent like your theme */
+}
+
+/* tighten on mobile */
+@media (max-width: 820px){
+  .footer-contact{
+    margin-top: 1.5rem; /* no need to "push bottom" when stacked */
+  }
+}
+.footer-form [data-netlify-recaptcha="true"]{
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+
+
+@media (max-width: 768px){
+  /* navbar */
+  .nav-contact{ display:none; }
+  .nav-menu{ justify-content: flex-end; }
+  .menu-icon{ margin-right: 2rem; }
+  .nav-logo{ flex: 0 0 150px; }
+
+  /* mega */
+  .mega-left-media{ display:none !important; }
+
+  .mega-left{
+    flex: 0 0 150px;
+    width:150px;
+    min-width:150px;
+    padding: 1rem 1.25rem;
+    gap:10px;
+  }
+  .mega-main-item{
+    font-size: 1.35rem;
+    letter-spacing: 0.04em;
+    padding: 8px 0;
+  }
+  .mega-right{ padding: 1.6rem 1.25rem; }
+  .mega-panel h4{ font-size: 1.35rem; margin-bottom: 32px; }
+
+  .mega-links{
+    grid-template-columns: 1fr;
+    gap: 12px;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+
+  /* mega menu scroll behavior + pinned contact */
+  .mega-menu{
+    height:auto;
+    max-height: calc(100vh - 90px);
+    overflow: hidden;
+  }
+  .mega-inner{
+    height:auto;
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mega-left, .mega-right{ height:auto; }
+  .mega-menu.open .mega-mobile-contact{ display:flex; }
+
+ 
+}
+
+@media (min-width: 769px){
+  .mega-mobile-contact{ display:none !important; }
+}
+
+
+
+
+
+.ff-error {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+}

@@ -1,0 +1,5 @@
+.section-hero {
+  background: linear-gradient(180deg, #d7edf4 0%, #b9ddeb 52%, #4b92ba 100%);
+}
+
+.section-hero .hero-sun { z-index: -1; }

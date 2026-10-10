@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About A-VAC Septic | Family-Owned Septic Pumping in Huffman, TX</title>
+  <meta name="description" content="A-VAC Septic has been serving Huffman, Crosby, Atascocita, Kingwood, and greater Northeast Houston for over 30 years. Family-owned and operated since day one." />
+  <link rel="canonical" href="https://www.avacseptic.com/about.html"/>
+
+  <!-- Fonts (matching site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles2.css">
+<link rel="stylesheet" href="/header.css">
+<style>
+    /* =============================================
+       RESET + BASE (mirrors site variables)
+    ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:      #05284D;
+      --navy-mid:  #073a6e;
+      --gold:      #ed242b;
+      --gold-dim:  rgba(237,36,43,0.18);
+      --white-92:  rgba(255,255,255,0.92);
+      --white-75:  rgba(255,255,255,0.75);
+      --white-55:  rgba(255,255,255,0.55);
+      --white-10:  rgba(255,255,255,0.10);
+      --white-06:  rgba(255,255,255,0.06);
+      --section-pad-x: clamp(1.25rem, 4vw, 3rem);
+      --radius-card: 14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Lexend, sans-serif;
+      background: var(--navy);
+      color: var(--white-92);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    /* =============================================
+       TYPOGRAPHY HELPERS
+    ============================================= */
+    .eyebrow {
+      display: inline-block;
+      font-family: "Lexend", sans-serif;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .5rem;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Lexend", sans-serif;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: .02em;
+      color: #fff;
+    }
+
+    h1 { font-size: clamp(2rem, 4.5vw, 3.4rem); }
+    h2 { font-size: clamp(1.65rem, 3vw, 2.5rem); }
+    h3 { font-size: clamp(1.15rem, 1.8vw, 1.5rem); }
+
+    /* =============================================
+       PAGE HERO
+    ============================================= */
+    .hero-about {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(4rem, 10vw, 8rem) 0 clamp(3rem, 7vw, 6rem);
+      background: var(--navy);
+    }
+
+    /* Diagonal accent stripe */
+    .hero-about::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% -10%, rgba(237,36,43,0.08) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 80% at -10% 50%, rgba(35,118,170,0.12) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .hero-about__inner {
+      position: relative;
+      max-width: 1600px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+    }
+
+    .hero-about__content { max-width: 60ch; }
+
+    .hero-about__title {
+      margin-top: .4rem;
+      text-wrap: balance;
+    }
+
+    .hero-about__lead {
+      margin-top: 1.1rem;
+      font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+      color: var(--white-75);
+      line-height: 1.55;
+    }
+
+    .hero-about__motto {
+      display: inline-flex;
+      align-items: center;
+      gap: .75rem;
+      margin-top: 1.5rem;
+      padding: .7rem 1.2rem;
+      border-radius: 999px;
+      border: 1px solid rgba(237,36,43,0.35);
+      background: var(--gold-dim);
+      font-family: "Lexend", sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero-about__motto span { font-size: 1.3rem; }
+
+    .hero-about__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin-top: 2rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      padding: .75rem 1.5rem;
+      border-radius: 999px;
+      border: 1px solid rgba(237,36,43,0.55);
+      background: var(--gold-dim);
+      color: #fff;
+      font-weight: 600;
+      font-size: .95rem;
+      transition: background .18s ease, transform .18s ease;
+    }
+
+    .btn-primary:hover { background: rgba(237,36,43,0.28); transform: translateY(-2px); }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      padding: .75rem 1.5rem;
+      border-radius: 999px;
+      border: 1px solid var(--white-10);
+      background: var(--white-06);
+      color: var(--white-75);
+      font-size: .95rem;
+      transition: border-color .18s ease, color .18s ease;
+    }
+
+    .btn-ghost:hover { border-color: rgba(255,255,255,0.28); color: #fff; }
+
+    /* Hero image card */
+    .hero-about__img-wrap {
+      position: relative;
+      border-radius: clamp(16px, 2vw, 24px);
+      overflow: hidden;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--white-10);
+    }
+
+    .hero-about__img-wrap img {
+      width: 100%;
+      height: clamp(300px, 45vw, 560px);
+      object-fit: cover;
+      object-position: center 30%;
+    }
+
+    /* gold accent bar */
+    .hero-about__img-wrap::after {
+      content: "";
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(to right, var(--gold) 0%, rgba(237,36,43,0) 100%);
+    }
+
+    /* =============================================
+       STAT BAR
+    ============================================= */
+    .section-stats {
+      background: var(--navy-mid);
+      border-top: 1px solid var(--white-10);
+      border-bottom: 1px solid var(--white-10);
+      padding: clamp(1.75rem, 4vw, 2.5rem) 0;
+    }
+
+    .stats-inner {
+      max-width: 1600px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: clamp(1rem, 3vw, 2rem);
+      text-align: center;
+    }
+
+    .stat { padding: .5rem; }
+
+    .stat__number {
+      font-family: "Lexend", sans-serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .stat__label {
+      margin-top: .4rem;
+      font-size: .9rem;
+      color: var(--white-55);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    /* =============================================
+       SERVICES GRID
+    ============================================= */
+    .section-services {
+      padding: clamp(4rem, 8vw, 7rem) 0;
+    }
+
+    .section-services .inner {
+      max-width: 1600px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+    }
+
+    .section-header { margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+    .section-header .lead {
+      margin-top: .9rem;
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      color: var(--white-75);
+      max-width: 65ch;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: clamp(1.25rem, 3vw, 2rem);
+    }
+
+    .service-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-card);
+      border: 1px solid var(--white-10);
+      background: var(--white-06);
+      padding: clamp(1.5rem, 2.5vw, 2rem);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 80px rgba(0,0,0,0.5);
+      border-color: rgba(255,255,255,0.16);
+    }
+
+    .service-card__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gold-dim);
+      border: 1px solid rgba(237,36,43,0.25);
+      font-size: 1.5rem;
+    }
+
+    .service-card__title {
+      font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+      letter-spacing: .02em;
+    }
+
+    .service-card__desc {
+      color: var(--white-75);
+      font-size: .95rem;
+      line-height: 1.55;
+      flex: 1;
+    }
+
+    .service-card__link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: .04em;
+      transition: gap .18s ease;
+    }
+
+    .service-card:hover .service-card__link { gap: .65rem; }
+
+    /* =============================================
+       STORY SECTION
+    ============================================= */
+    .section-story {
+      padding: clamp(4rem, 8vw, 7rem) 0;
+      background: var(--navy-mid);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-story::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 90% 50%, rgba(237,36,43,0.05) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .story-inner {
+      position: relative;
+      max-width: 1600px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+      display: grid;
+      grid-template-columns: minmax(0,1fr) minmax(0,1.2fr);
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: center;
+    }
+
+    .story-image {
+      position: relative;
+      border-radius: clamp(16px, 2vw, 24px);
+      overflow: hidden;
+      border: 1px solid var(--white-10);
+    }
+
+    .story-image img {
+      width: 100%;
+      height: clamp(300px, 42vw, 520px);
+      object-fit: cover;
+      filter: contrast(1.04) saturate(1.04);
+    }
+
+    /* corner accent */
+    .story-image::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 80px;
+      height: 4px;
+      background: var(--gold);
+      border-radius: 0 0 4px 0;
+      z-index: 2;
+    }
+
+    .story-content .section-header { margin-bottom: 1.5rem; }
+
+    .story-body p {
+      color: var(--white-75);
+      line-height: 1.65;
+      font-size: clamp(.95rem, 1.4vw, 1.1rem);
+    }
+
+    .story-body p + p { margin-top: 1rem; }
+
+    .story-quote {
+      margin-top: 1.75rem;
+      padding: 1.25rem 1.4rem;
+      border-left: 3px solid var(--gold);
+      background: rgba(237,36,43,0.06);
+      border-radius: 0 var(--radius-card) var(--radius-card) 0;
+    }
+
+    .story-quote p {
+      font-family: "Lexend", sans-serif;
+      font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+      font-weight: 700;
+      font-style: italic;
+      color: var(--white-92) !important;
+      line-height: 1.35;
+    }
+
+    /* =============================================
+       TEAM SECTION
+    ============================================= */
+    .section-team {
+      padding: clamp(4rem, 8vw, 7rem) 0;
+    }
+
+    .team-inner {
+      max-width: 1600px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: clamp(1.5rem, 3vw, 2.5rem);
+      margin-top: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .team-card {
+      border-radius: clamp(16px, 2vw, 22px);
+      overflow: hidden;
+      border: 1px solid var(--white-10);
+      background: var(--white-06);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+    }
+
+    .team-card__img-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team-card__img-wrap img {
+      width: 100%;
+      height: clamp(240px, 28vw, 360px);
+      object-fit: cover;
+      object-position: center 20%;
+      transition: transform .4s ease;
+    }
+
+    .team-card:hover .team-card__img-wrap img { transform: scale(1.04); }
+
+    /* placeholder when no image */
+    .team-card__placeholder {
+      width: 100%;
+      height: clamp(240px, 28vw, 360px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(237,36,43,0.08), rgba(35,118,170,0.12));
+      font-size: 5rem;
+      letter-spacing: -.05em;
+      font-family: "Lexend", sans-serif;
+      font-weight: 900;
+      color: rgba(237,36,43,0.3);
+    }
+
+    .team-card__body {
+      padding: 1.4rem 1.5rem 1.5rem;
+    }
+
+    .team-card__name {
+      font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+      color: #fff;
+    }
+
+    .team-card__role {
+      margin-top: .35rem;
+      font-size: .85rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .team-card__bio {
+      margin-top: .8rem;
+      font-size: .93rem;
+      color: var(--white-55);
+      line-height: 1.55;
+    }
+
+    /* =============================================
+       FOUNDING PAIR SECTION
+    ============================================= */
+    .founders-note {
+      margin-top: clamp(2rem, 4vw, 3rem);
+      padding: clamp(1.25rem, 2.5vw, 2rem) clamp(1.25rem, 3vw, 2.5rem);
+      background: var(--white-06);
+      border: 1px solid var(--white-10);
+      border-radius: clamp(14px, 2vw, 20px);
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+    }
+
+    .founders-note__icon {
+      font-size: 2.2rem;
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
+
+    .founders-note__text h4 {
+      font-size: 1rem;
+      color: var(--gold);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+    }
+
+    .founders-note__text p {
+      color: var(--white-75);
+      font-size: .95rem;
+      line-height: 1.55;
+    }
+
+    /* =============================================
+       CTA BANNER
+    ============================================= */
+    .section-cta {
+      padding: clamp(4rem, 8vw, 6rem) 0;
+      background: var(--navy-mid);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-cta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(237,36,43,0.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .cta-inner {
+      position: relative;
+      max-width: 720px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+    }
+
+    .cta-inner h2 { text-wrap: balance; }
+
+    .cta-inner p {
+      margin-top: 1rem;
+      color: var(--white-75);
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      line-height: 1.5;
+    }
+
+    .cta-inner .cta-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .85rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    /* =============================================
+       FOOTER (copied from site)
+    ============================================= */
+    .site-footer {
+      background: var(--navy);
+      color: var(--white-92);
+      padding: clamp(2.5rem, 5vw, 4rem) 0 1.25rem;
+      border-top: 1px solid var(--white-10);
+    }
+
+    .site-footer *, .site-footer *::before, .site-footer *::after { box-sizing: border-box; }
+
+    .footer-inner {
+      max-width: 1600px;
+      margin-inline: auto;
+      padding-inline: var(--section-pad-x);
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1.25rem, 3vw, 2rem);
+    }
+
+    .footer-cta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: .9rem;
+      padding: clamp(.85rem, 1.6vw, 1.15rem);
+      border-radius: 14px;
+      background: var(--white-06);
+      border: 1px solid var(--white-10);
+    }
+
+    .footer-cta__text h3 { font-size: clamp(1rem, 1.6vw, 1.25rem); margin: 0; }
+    .footer-cta__text p { margin: .3rem 0 0; font-size: .9rem; color: var(--white-75); }
+
+    .footer-cta__actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+
+    .footer-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: .55rem .85rem;
+      border-radius: 999px;
+      background: var(--white-06);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: var(--white-92);
+      font-size: .9rem;
+      white-space: nowrap;
+    }
+
+    .footer-btn--primary {
+      background: var(--gold-dim);
+      border-color: rgba(237,36,43,0.45);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.2fr);
+      gap: clamp(1.25rem, 3vw, 2rem);
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--white-10);
+    }
+
+    .footer-col { display: grid; gap: .6rem; align-content: start; }
+
+    .footer-col a {
+      color: rgba(255,255,255,0.75);
+      font-size: .9rem;
+      transition: color .15s ease;
+    }
+
+    .footer-col a:hover { color: #fff; }
+
+    .footer-title {
+      font-family: "Lexend", sans-serif;
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--white-92);
+      margin-bottom: .25rem;
+    }
+
+    .footer-logo { height: 44px; width: auto; }
+    .footer-tagline { color: var(--white-75); font-size: .9rem; line-height: 1.5; max-width: 38ch; }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: .75rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--white-10);
+      color: rgba(255,255,255,0.55);
+      font-size: .85rem;
+    }
+
+    .footer-bottom__links { display: flex; gap: 1rem; }
+
+    /* =============================================
+       RESPONSIVE
+    ============================================= */
+    @media (max-width: 1000px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-col:last-child { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 980px) {
+      .hero-about__inner { grid-template-columns: 1fr; }
+      .hero-about__img-wrap { order: -1; }
+      .story-inner { grid-template-columns: 1fr; }
+      .story-image { order: -1; }
+      .stats-inner { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .stats-inner { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+      .footer-cta { flex-direction: column; align-items: flex-start; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* =============================================
+       ANIMATIONS
+    ============================================= */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-about__content > * {
+      opacity: 0;
+      animation: fadeUp .6s ease forwards;
+    }
+
+    .hero-about__content .eyebrow   { animation-delay: .05s; }
+    .hero-about__content h1          { animation-delay: .15s; }
+    .hero-about__content .hero-about__lead { animation-delay: .25s; }
+    .hero-about__content .hero-about__motto { animation-delay: .35s; }
+    .hero-about__content .hero-about__actions { animation-delay: .45s; }
+
+    .hero-about__img-wrap {
+      opacity: 0;
+      animation: fadeUp .7s ease .3s forwards;
+    }
+  </style>
+
+<style>
+/* About page aligned with the index2 visual system. */
+body { font-family:Lexend,sans-serif; background:#05284d; }
+h1,h2,h3,h4 { font-weight:600; letter-spacing:-.035em; }
+h2 { font-size:clamp(2rem,3.6vw,3.35rem); line-height:1.12; }
+.eyebrow { font-size:.75rem; font-weight:600; letter-spacing:.16em; color:#ed242b; }
+.navbar { position:fixed; }
+.navbar .navbar-inner { padding:0; }
+.navbar .nav-logo img { height:auto; }
+.navbar .nav-links { display:flex; }
+.hero-about { padding:calc(92px + clamp(3.5rem,7vw,6rem)) 0 clamp(3.5rem,7vw,6rem); }
+.hero-about__title,h1 { font-size:clamp(3rem,5.5vw,5.4rem); line-height:1.04; }
+h1 span { color:#ed242b; }
+.hero-about__inner { grid-template-columns:1fr 1.15fr; }
+.hero-about__lead { max-width:48ch; line-height:1.8; font-size:1.05rem; }
+.hero-about__img-wrap img { height:auto; min-height:0; object-fit:contain; }
+.hero-about__img-wrap::after { display:none; }
+.hero-about__motto { padding:0; border:0; background:none; font-weight:500; font-size:.9rem; letter-spacing:0; text-transform:none; color:#fff; }
+.btn-primary,.footer-btn--primary { background:#ed242b; border-color:#ed242b; border-radius:7px; color:white; }
+.btn-primary:hover,.footer-btn--primary:hover { background:#d51e25; border-color:#d51e25; }
+.btn-ghost { border-radius:7px; }
+.section-stats { background:#f7f5f3; border:0; padding-block:2.5rem; }
+.stat__number { color:#ed242b; font-weight:600; font-size:clamp(1.6rem,3vw,2.8rem); letter-spacing:-.04em; }
+.stat__label { color:#526679; font-size:.73rem; line-height:1.6; }
+.section-story { background:#05284d; }
+.story-image { border:0; background:#0b355b; }
+.story-image img { object-fit:contain; }
+.story-body p { font-size:1rem; line-height:1.85; }
+.story-quote { background:#ffffff06; border-left-color:#ed242b; }
+.story-quote p { font-style:normal; font-weight:500; }
+.section-team { background:#f7f5f3; color:#092e50; }
+.section-team h2,.team-card__name { color:#092e50; }
+.team-card { background:#fff; border:1px solid #dce3e5; }
+.team-card__placeholder { height:140px; background:#eef1f2; color:#ed242b; font-size:3rem; }
+.team-card__body { padding:2rem; }
+.team-card__bio,.founders-note__text p { color:#526679; line-height:1.8; }
+.team-card__role { color:#c9232c; font-size:.72rem; }
+.founders-note { background:white; border:1px solid #dce3e5; }
+.section-cta { background:#05284d; }
+.site-footer { background:#031b36; }
+.footer-logo { object-fit:contain; object-position:left; }
+.hero-about__content>* , .hero-about__img-wrap { opacity:1; animation:none; }
+@media(max-width:980px) { .hero-about__inner { grid-template-columns:1fr; } .hero-about__img-wrap { order:0; } .hero-about__content { max-width:65ch; } }
+@media(max-width:640px) { .nav-links { display:flex; } .stats-inner { gap:2rem 1rem; } .team-grid { grid-template-columns:1fr; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .team-card,.team-card img,.btn-primary { transition:none; transform:none; } }
+</style>
+  <link rel="stylesheet" href="/site-shell.css">
+</head>
+
+<body>
+
+  <!-- ============================
+       NAVBAR
+  ============================ -->
+  <!-- shared:header:start -->
+<header class="navbar site-header">
+  <div class="navbar-inner">
+    <a class="nav-logo" href="/index.html" aria-label="A-VAC Septic home"><img src="/images/logo.png" alt="A-VAC Septic"></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="/about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="/services.html">Services</a>
+          <div class="dropdown">
+            <a href="/residential-septic-cleaning.html">Residential Septic Cleaning</a>
+            <a href="/commercial-septic-cleaning.html">Commercial Septic Cleaning</a>
+            <a href="/septic-pumping.html">Septic Pumping</a>
+            <a href="/septic-tank-cleaning.html">Septic Tank Cleaning</a>
+            <a href="/contact.html">Emergency Pump-Outs</a>
+            <a href="/wastewater-removal.html">Septic Waste Disposal</a>
+            <a href="/index.html#septic-cleaning">System Maintenance</a>
+          </div>
+        </li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="tel:+18323182256">Call Now</a>
+  </div>
+</header>
+<!-- shared:header:end -->
+
+  <main>
+
+    <!-- ============================
+         HERO
+    ============================ -->
+    <section class="hero-about" id="top">
+      <div class="hero-about__inner">
+
+        <div class="hero-about__content">
+          <span class="eyebrow">About A-VAC Septic</span>
+          <h1>Family owned.<br><span>Huffman proud.</span></h1>
+          <p class="hero-about__lead">
+            Family-owned for over 30 years, proudly serving Huffman, Crosby,
+            Atascocita, Kingwood, and the surrounding Northeast Houston communities
+            with honest, dependable septic service.
+          </p>
+          <div class="hero-about__motto">
+            
+            You Dump It, We Pump It
+          </div>
+          <div class="hero-about__actions">
+            <a class="btn-primary" href="/contact.html">Schedule a Service</a>
+            <a class="btn-ghost" href="tel:+18323182256">(832) 318-2256</a>
+          </div>
+        </div>
+
+        <div class="hero-about__img-wrap">
+          <img
+            src="/images/A-Vac Family.jpg"
+            alt="A-VAC Septic family team on site in Huffman, TX"
+            loading="eager"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================
+         STATS BAR
+    ============================ -->
+    <section class="section-stats" aria-label="Company highlights">
+      <div class="stats-inner">
+        <div class="stat">
+          <div class="stat__number">30+</div>
+          <div class="stat__label">Years in Business</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">2nd</div>
+          <div class="stat__label">Generation Family-Owned</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">Local</div>
+          <div class="stat__label">Huffman &amp; Northeast Houston</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">Hands-on</div>
+          <div class="stat__label">Personal service</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         SERVICES
+    ============================ -->
+<section class="av-section av-services"><div class="av-wrap"><div class="av-heading"><div><span class="eyebrow">Here for your property</span><h2>Local people.<br><span>Dependable care.</span></h2></div><p>Septic pumping and cleaning for the homes and businesses that make our community.</p></div><div class="av-service-links av-portals" aria-label="Explore septic services by property type">
+      <a class="av-portal" href="/residential-septic-cleaning.html"><img src="/images/img2.jpeg" alt="" loading="lazy"><div class="av-portal-content"><span class="av-portal-label">For your home</span><h3>Residential<br>septic services</h3><p>Keep your household flowing with dependable septic pumping and cleaning.</p><span class="av-portal-link">Explore residential <span aria-hidden="true">↗</span></span></div></a>
+      <a class="av-portal" href="/commercial-septic-cleaning.html"><img src="/images/img3.png" alt="" loading="lazy"><div class="av-portal-content"><span class="av-portal-label">For your business</span><h3>Commercial<br>septic services</h3><p>Plan septic care for your business, rental property or commercial facility.</p><span class="av-portal-link">Explore commercial <span aria-hidden="true">↗</span></span></div></a>
+    </div></div></section>
+
+    <!-- ============================
+         OUR STORY
+    ============================ -->
+    <section class="section-story" id="story">
+      <div class="story-inner">
+
+        <div class="story-image">
+          <img
+            src="/images/avac-truck.png"
+            alt="A-VAC Septic vacuum truck ready for service"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="story-content">
+          <header class="section-header">
+            <span class="eyebrow">Our Story</span>
+            <h2>Family-Owned for Over 30 Years</h2>
+          </header>
+
+          <div class="story-body">
+            <p>
+              A-VAC Septic proudly serves both homes and businesses with reliable septic
+              tank pumping, cleaning, and maintenance. Based in Huffman, we're honored to
+              support our surrounding communities with honest, dependable service.
+            </p>
+            <p>
+              For more than three decades, A-VAC Septic has been a trusted, family-owned
+              and family-operated company. Founded by <strong>Karla and Fred Wolf</strong>,
+              the business is now led by <strong>Jasmin and Famen Wolf</strong>, who
+              continue the "mom and pop" values the company was built on — hard work,
+              integrity, and genuine customer care.
+            </p>
+            <p>
+              Our commitment is simple: deliver quality work, provide honest service, and
+              treat every customer like family. Whether you need routine septic pumping,
+              commercial service, or an emergency response, we're here to help.
+            </p>
+          </div>
+
+          <div class="story-quote">
+            <p>"You dump it, we pump it — and we've been doing it proudly for over 30 years."</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================
+         TEAM
+    ============================ -->
+    <section class="section-team" id="team">
+      <div class="team-inner">
+
+        <header class="section-header">
+          <span class="eyebrow">Meet the Team</span>
+          <h2>Next-Gen Leaders of A-VAC Septic</h2>
+        </header>
+
+        <div class="team-grid">
+
+          <!-- Famen -->
+          <article class="team-card">
+            <div class="team-card__img-wrap">
+              <div class="team-card__placeholder">FW</div>
+            </div>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Famen Wolf</h3>
+              <div class="team-card__role">Business Development Manager</div>
+              <p class="team-card__bio">
+                Carrying on the Wolf family legacy, Famen leads growth and operations
+                with the same work ethic and community-first values that built A-VAC Septic
+                into a household name across Northeast Houston.
+              </p>
+            </div>
+          </article>
+
+          <!-- Jasmin -->
+          <article class="team-card">
+            <div class="team-card__img-wrap">
+              <div class="team-card__placeholder">JW</div>
+            </div>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Jasmin Wolf</h3>
+              <div class="team-card__role">Sales &amp; Operations Manager</div>
+              <p class="team-card__bio">
+                Jasmin keeps the day-to-day running smoothly — from scheduling and customer
+                communication to ensuring every job meets the high standards A-VAC Septic
+                has stood behind for over three decades.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Founders note -->
+        <div class="founders-note">
+          
+          <div class="founders-note__text">
+            <h4>Our Founders</h4>
+            <p>
+              A-VAC Septic was founded by <strong>Karla and Fred Wolf</strong>, whose vision
+              and work ethic built a trusted name in the Lake Houston community. Their
+              dedication to honest, quality service remains the cornerstone of everything
+              we do today.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================
+         CTA
+    ============================ -->
+    <section class="section-cta">
+      <div class="cta-inner">
+        <span class="eyebrow">Get in Touch</span>
+        <h2>Ready to Schedule Septic Service?</h2>
+        <p>
+          Routine cleanings and emergency pump-outs in Huffman, TX and surrounding areas.
+          Give us a call or request service online — we look forward to helping you.
+        </p>
+        <div class="cta-btns">
+          <a class="btn-primary" href="/contact.html">Request Service</a>
+          <a class="btn-ghost" href="tel:+18323182256">(832) 318-2256</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================
+       FOOTER
+  ============================ -->
+  <!-- shared:footer:start -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-cta">
+      <div class="footer-cta__text"><h3>Need septic service?</h3><p>Septic pumping and cleaning in Huffman, TX and surrounding areas.</p></div>
+      <div class="footer-cta__actions"><a class="footer-btn footer-btn--primary" href="/contact.html">Request Service</a><a class="footer-btn" href="tel:+18323182256">(832) 318-2256</a></div>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-col"><a href="/index.html"><img class="footer-logo" src="/images/logo.png" alt="A-VAC Septic home"></a><p class="footer-tagline">Family-owned septic and wastewater service for homes and businesses in Northeast Houston.</p></div>
+      <nav class="footer-col" aria-label="Footer navigation"><h4 class="footer-title">Company</h4><a href="/about.html">About</a><a href="/services.html">Services</a><a href="/index.html#service-area">Service Area</a><a href="/contact.html">Contact</a></nav>
+      <nav class="footer-col" aria-label="Footer services"><h4 class="footer-title">Services</h4><a href="/residential-septic-cleaning.html">Residential Septic Cleaning</a><a href="/commercial-septic-cleaning.html">Commercial Septic Cleaning</a><a href="/septic-pumping.html">Septic Pumping</a><a href="/septic-tank-cleaning.html">Septic Tank Cleaning</a><a href="/wastewater-removal.html">Septic Waste Disposal</a></nav>
+      <div class="footer-col"><h4 class="footer-title">Contact</h4><a href="tel:+18323182256">(832) 318-2256</a><a href="mailto:info@avacseptic.com">info@avacseptic.com</a><a href="https://maps.google.com/?q=25727+Lakewater+Huffman+TX+77336" target="_blank" rel="noopener">25727 Lakewater, Huffman, TX 77336</a></div>
+    </div>
+    <div class="footer-bottom"><p>© <span class="site-year" id="year"></span> A-VAC Septic. All rights reserved.</p><div class="footer-bottom__links"><a href="https://www.avacseptic.com/privacy-policy">Privacy</a><a href="https://www.avacseptic.com/terms-and-conditions">Terms</a></div></div>
+  </div>
+</footer>
+<!-- shared:footer:end -->
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script>
+if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+ gsap.registerPlugin(ScrollTrigger);
+ gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  gsap.utils.toArray('.hero-about__content,.hero-about__img-wrap,.stat,.av-portal,.story-content,.story-image,.team-card,.founders-note,.cta-inner').forEach(el => {
+   ScrollTrigger.create({trigger:el,start:'top 94%',once:true,onEnter:()=>gsap.fromTo(el,{y:24,opacity:.35},{y:0,opacity:1,duration:.65,ease:'power2.out',clearProps:'transform,opacity'})});
+  });
+ });
+}
+</script>  <script src="/site-shell.js"></script>
+</body>
+</html>
