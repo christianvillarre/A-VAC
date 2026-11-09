@@ -221,15 +221,22 @@
 </section>
 
 
-<section class="av-section av-services" id="services" aria-labelledby="services-title">
-  <div class="av-wrap">
-    <div class="av-heading"><span class="eyebrow">Residential &amp; commercial services</span><h2 id="services-title">Family-owned septic services for your family's septic needs.</h2><p>From routine septic care to septic waste disposal, get the right service for your home or business in Huffman and Northeast Houston.</p></div>
-    <div class="av-cards">
-      <article class="av-card" id="septic-pumping"><img src="/images/img1.png" alt="" loading="lazy"><div class="av-card-body"><span class="av-number">01 / PUMP</span><h3><a href="/septic-pumping.html">Septic pumping</a></h3><p>Remove accumulated sludge, scum and wastewater from your tank. Routine pumping helps reduce buildup and the risk of backups.</p><a class="av-arrow-link" href="#quote" data-service="Septic pumping">Request pumping</a></div></article>
-      <article class="av-card" id="septic-cleaning"><img src="/images//A-VAC PIC 3.jpg" alt="" loading="lazy"><div class="av-card-body"><span class="av-number">02 / CLEAN</span><h3><a href="/septic-tank-cleaning.html">Septic cleaning</a></h3><p>Give your tank a thorough cleanout. We remove settled waste and check for visible concerns such as blockages, leaks and baffle issues.</p><a class="av-arrow-link" href="#quote" data-service="Septic cleaning">Request cleaning</a></div></article>
-      <article class="av-card" id="wastewater-removal"><img src="/images/img3.png" alt="" loading="lazy"><div class="av-card-body"><span class="av-number">03 / DISPOSE</span><h3><a href="/wastewater-removal.html">Septic waste disposal</a></h3><p>Arrange removal and transport of non-hazardous wastewater from septic and holding tanks, with disposal at licensed treatment facilities.</p><a class="av-arrow-link" href="#quote" data-service="Septic waste disposal">Request disposal service</a></div></article>
+<section class="section-about" id="about">
+  <div class="about-inner">
+    <div class="about-media">
+      <img src="/images/A-Vac Family.jpg" alt="The A-VAC Septic family" loading="lazy">
     </div>
-    <div class="av-service-links"><span>Care for every kind of property.</span><a class="av-arrow-link" href="/services.html">All septic services</a><a class="av-arrow-link" href="/residential-septic-cleaning.html">Residential septic services</a><a class="av-arrow-link" href="/commercial-septic-cleaning.html">Commercial septic services</a></div>
+    <div class="about-content">
+      <span class="eyebrow">About Our Company</span>
+      <h2>Family owned.<br>Huffman proud.</h2>
+      <p class="about-lead">For more than 30 years, A-VAC has helped local families and businesses care for their septic systems.</p>
+      <p class="about-text">Founded by Karla and Fred Wolf and now led by Jasmin and Famen Wolf, our family business is built on hard work, honest service and personal care. Based in Huffman, we bring those same values to every pump-out across the Lake Houston area.</p><a class="av-text-link av-arrow-link" href="/about.html">Meet the A-VAC family</a>
+      <ul class="about-points">
+        <li>Licensed & compliant waste disposal</li>
+        <li>Emergency and scheduled service available</li>
+        <li>Experienced operators & modern equipment</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -237,11 +244,11 @@
  <div class="av-wrap av-request-grid">
   <div class="av-request-intro"><span class="eyebrow">Let's get you scheduled</span><h2 id="request-title">Tell us what<br>you need.</h2><a class="av-call av-arrow-link" href="tel:+18323182256">(832) 318-2256</a><p class="av-request-meta">Huffman, TX · Homes &amp; businesses<br>Mon–Fri, 8 AM–6 PM · Weekend appointments by request</p><figure class="av-request-photo"><img src="/images/IMG_0043.jpg" alt="A-VAC septic truck at a residential job" loading="lazy"></figure></div>
   <form class="av-form" id="requestForm" action="mailto:info@avacseptic.com" method="post" enctype="text/plain" autocomplete="on">
-   <h3>Request service</h3><p class="av-form-note">Just your name and phone are required.</p>
+   <h3>Request service</h3><p class="av-form-note">Tell us how to reach you and what you need.</p>
    <div class="av-fields"><label>Your name <span aria-hidden="true">*</span><input name="name" autocomplete="name" required maxlength="100" placeholder="Full name"></label><label>Phone number <span aria-hidden="true">*</span><input name="phone" type="tel" autocomplete="tel" required maxlength="30" pattern="[+0-9 .\(\)\-]{7,30}" title="Enter a phone number with at least 7 characters, using numbers and standard phone punctuation." placeholder="(832) 555-0123"></label></div>
-   <label>What can we help with?<select name="service" id="requestedService"><option>Not sure — help me choose</option><option>Septic pumping</option><option>Septic cleaning</option><option>Septic waste disposal</option><option>Backup / urgent service</option></select></label>
-   <label>City or ZIP code <span class="av-optional">(optional)</span><input name="location" autocomplete="address-level2" maxlength="120" placeholder="Where do you need service?"></label>
-   <details class="av-form-details"><summary>Add email or job details <span class="av-optional">(optional)</span></summary><label>Email<input name="email" type="email" autocomplete="email" maxlength="160" placeholder="you@example.com"></label><label>Anything we should know?<textarea name="notes" rows="3" maxlength="1500" placeholder="Access instructions, tank size, or what’s happening…"></textarea></label></details>
+   <label>Email <span aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" required maxlength="160" placeholder="you@example.com"></label>
+   <label>Address <span aria-hidden="true">*</span><input name="address" autocomplete="street-address" required maxlength="200" placeholder="Street address, city, and ZIP code"></label>
+   <label>Description <span aria-hidden="true">*</span><textarea name="description" id="serviceDescription" rows="4" required maxlength="1500" placeholder="Tell us what service you need or what’s happening…"></textarea></label>
    <button class="av-button av-arrow-link" type="submit">Prepare service request</button>
    <p class="av-small">Opens your email app with your details filled in. Send the email to complete your request. Prefer to talk? <a href="tel:+18323182256">Call us</a>.</p>
    <p class="av-small">Your details are used to respond to your inquiry. <a href="https://www.avacseptic.com/privacy-policy">Privacy policy</a>.</p>
@@ -531,34 +538,15 @@
 </Style>
 
 
-<section class="section-about" id="about">
-  <div class="about-inner">
-
-    <!-- BIG IMAGE -->
-    <div class="about-media">
-      <img
-        src="/images/A-Vac Family.jpg"
-        alt="The A-VAC Septic family"
-        loading="lazy"
-      >
+<section class="av-section av-services" id="services" aria-labelledby="services-title">
+  <div class="av-wrap">
+    <div class="av-heading"><span class="eyebrow">Residential &amp; commercial services</span><h2 id="services-title">Family-owned septic services for your family's septic needs.</h2><p>From routine septic care to septic waste disposal, get the right service for your home or business in Huffman and Northeast Houston.</p></div>
+    <div class="av-cards">
+      <article class="av-card" id="septic-pumping"><img src="/images/img1.png" alt="" loading="lazy"><div class="av-card-body"><span class="av-number">01 / PUMP</span><h3><a href="/septic-pumping.html">Septic pumping</a></h3><p>Remove accumulated sludge, scum and wastewater from your tank. Routine pumping helps reduce buildup and the risk of backups.</p><a class="av-arrow-link" href="#quote" data-service="Septic pumping">Request pumping</a></div></article>
+      <article class="av-card" id="septic-cleaning"><img src="/images//A-VAC PIC 3.jpg" alt="" loading="lazy"><div class="av-card-body"><span class="av-number">02 / CLEAN</span><h3><a href="/septic-tank-cleaning.html">Septic cleaning</a></h3><p>Give your tank a thorough cleanout. We remove settled waste and check for visible concerns such as blockages, leaks and baffle issues.</p><a class="av-arrow-link" href="#quote" data-service="Septic cleaning">Request cleaning</a></div></article>
+      <article class="av-card" id="wastewater-removal"><img src="/images/img3.png" alt="" loading="lazy"><div class="av-card-body"><span class="av-number">03 / DISPOSE</span><h3><a href="/wastewater-removal.html">Septic waste disposal</a></h3><p>Arrange removal and transport of non-hazardous wastewater from septic and holding tanks, with disposal at licensed treatment facilities.</p><a class="av-arrow-link" href="#quote" data-service="Septic waste disposal">Request disposal service</a></div></article>
     </div>
-
-    <!-- CONTENT -->
-    <div class="about-content">
-      <span class="eyebrow">About Our Company</span>
-      <h2>Family owned.<br>Huffman proud.</h2>
-
-      <p class="about-lead">For more than 30 years, A-VAC has helped local families and businesses care for their septic systems.</p>
-
-      <p class="about-text">Founded by Karla and Fred Wolf and now led by Jasmin and Famen Wolf, our family business is built on hard work, honest service and personal care. Based in Huffman, we bring those same values to every pump-out across the Lake Houston area.</p><a class="av-text-link av-arrow-link" href="/about.html">Meet the A-VAC family</a>
-
-      <ul class="about-points">
-        <li>Licensed & compliant waste disposal</li>
-        <li>Emergency and scheduled service available</li>
-        <li>Experienced operators & modern equipment</li>
-      </ul>
-    </div>
-
+    <div class="av-service-links"><span>Care for every kind of property.</span><a class="av-arrow-link" href="/services.html">All septic services</a><a class="av-arrow-link" href="/residential-septic-cleaning.html">Residential septic services</a><a class="av-arrow-link" href="/commercial-septic-cleaning.html">Commercial septic services</a></div>
   </div>
 </section>
 
@@ -590,7 +578,7 @@
       <div class="footer-col"><a href="/index.html"><img class="footer-logo" src="/images/logo.png" alt="A-VAC Septic home"></a><p class="footer-tagline">Family-owned septic and wastewater service for homes and businesses in Northeast Houston.</p></div>
       <nav class="footer-col" aria-label="Footer navigation"><h4 class="footer-title">Company</h4><a href="/about.html">About</a><a href="/services.html">Services</a><a href="/index.html#service-area">Service Area</a><a href="/contact.html">Contact</a></nav>
       <nav class="footer-col" aria-label="Footer services"><h4 class="footer-title">Services</h4><a href="/residential-septic-cleaning.html">Residential Septic Cleaning</a><a href="/commercial-septic-cleaning.html">Commercial Septic Cleaning</a><a href="/septic-pumping.html">Septic Pumping</a><a href="/septic-tank-cleaning.html">Septic Tank Cleaning</a><a href="/wastewater-removal.html">Septic Waste Disposal</a></nav>
-      <div class="footer-col"><h4 class="footer-title">Contact</h4><a href="tel:+18323182256">(832) 318-2256</a><a href="mailto:info@avacseptic.com">info@avacseptic.com</a><a href="https://maps.google.com/?q=25727+Lakewater+Huffman+TX+77336" target="_blank" rel="noopener">25727 Lakewater, Huffman, TX 77336</a></div>
+      <div class="footer-col"><h4 class="footer-title">Contact</h4><a href="tel:+18323182256">(832) 318-2256</a><a href="https://maps.google.com/?q=25727+Lakewater+Huffman+TX+77336" target="_blank" rel="noopener">25727 Lakewater, Huffman, TX 77336</a></div>
     </div>
     <div class="footer-bottom"><p>© <span class="site-year" id="year"></span> A-VAC Septic. All rights reserved.</p><div class="footer-bottom__links"><a href="https://www.avacseptic.com/privacy-policy">Privacy</a><a href="https://www.avacseptic.com/terms-and-conditions">Terms</a></div></div>
   </div>
@@ -644,9 +632,9 @@
 <script>
 (() => {
   const form = document.getElementById('requestForm');
-  const select = document.getElementById('requestedService');
+  const description = document.getElementById('serviceDescription');
   document.querySelectorAll('[data-service]').forEach(link => {
-    link.addEventListener('click', () => { select.value = link.dataset.service; });
+    link.addEventListener('click', () => { description.value = `I'm interested in ${link.dataset.service}.`; });
   });
   // No delivery endpoint is configured. Never claim the request was received.
   form.addEventListener('submit', event => {
@@ -655,12 +643,12 @@
     const data = new FormData(form);
     const body = ['Service request from the A-VAC website', '',
       'Name: ' + data.get('name'), 'Phone: ' + data.get('phone'),
-      'Service: ' + data.get('service'), 'Location: ' + data.get('location'),
-      'Email: ' + data.get('email'), 'Details: ' + data.get('notes')].join(String.fromCharCode(10));
+      'Email: ' + data.get('email'), 'Address: ' + data.get('address'),
+      'Description: ' + data.get('description')].join(String.fromCharCode(10));
     const status = document.getElementById('requestStatus');
     status.hidden = false;
     status.textContent = 'Finish by sending the email in your email app. Your request has not been submitted on this website. If no email app opens, call (832) 318-2256 or email info@avacseptic.com.';
-    window.location.href = 'mailto:info@avacseptic.com?subject=' + encodeURIComponent('A-VAC service request: ' + data.get('service')) + '&body=' + encodeURIComponent(body);
+    window.location.href = 'mailto:info@avacseptic.com?subject=' + encodeURIComponent('A-VAC service request') + '&body=' + encodeURIComponent(body);
   });
 })();
 </script>

@@ -87,6 +87,9 @@ h1,h2,h3 { font-family: "Exo 2", sans-serif; line-height: 1.12; }
 @media (max-width: 700px) { .detail-step-grid,.detail-related-links { grid-template-columns: 1fr; } .detail-hero .services-hero-image img { min-height: 240px; } }
 
 /* Services overview: direct typography, larger photos, and a simple arrow. */
+.services-overview .services-wrap,
+.services-overview .breadcrumb__inner { max-width:none; }
+.services-overview .services-hero h1 { max-width:none; }
 .services-overview .services-hero::before { display:none; }
 .services-overview .services-hero-grid { grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
 .services-overview .services-hero-image { min-width:0; min-height:0; border:0; border-radius:0; background:transparent; }

@@ -2,7 +2,6 @@
 .contact-hero { padding-top: clamp(2rem, 5vw, 4rem); }
 .contact-hero .services-hero-grid { grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); align-items: start; }
 .contact-hero-copy { padding-top: clamp(.5rem,2vw,2rem); }
-.contact-hero-reassurance { margin-top: 1.5rem; color: rgba(255,255,255,.8); font-weight: 600; }
 .contact-direct > a { display: block; width: fit-content; margin-bottom: .9rem; color: #fff; overflow-wrap: anywhere; }
 .contact-direct > a:hover,.contact-direct p a:hover { color: #ff797d; }
 .contact-direct .contact-direct-phone { font-family: "Exo 2",sans-serif; font-size: clamp(1.8rem,3vw,2.7rem); font-weight: 700; line-height: 1.15; }
@@ -23,12 +22,11 @@
 .contact-form-row { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
 .contact-form label { display: block; font-size: .88rem; font-weight: 600; }
 .contact-form label span[aria-hidden] { color: #ff797d; }
-.contact-form .contact-optional { color: rgba(255,255,255,.55); font-weight: 400; }
-.contact-form input,.contact-form select,.contact-form textarea { width: 100%; min-height: 48px; padding: .8rem .9rem; border: 1px solid rgba(255,255,255,.3); border-radius: 4px; background: #031b36; color: #fff; font: inherit; }
-.contact-form label > input,.contact-form label > select,.contact-form label > textarea { display: block; margin-top: .45rem; }
+.contact-form input,.contact-form textarea { width: 100%; min-height: 48px; padding: .8rem .9rem; border: 1px solid rgba(255,255,255,.3); border-radius: 4px; background: #031b36; color: #fff; font: inherit; }
+.contact-form label > input,.contact-form label > textarea { display: block; margin-top: .45rem; }
 .contact-form textarea { min-height: 120px; resize: vertical; }
 .contact-form input::placeholder,.contact-form textarea::placeholder { color: rgba(255,255,255,.5); }
-.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus { outline: 2px solid #ff797d; outline-offset: 2px; }
+.contact-form input:focus,.contact-form textarea:focus { outline: 2px solid #ff797d; outline-offset: 2px; }
 .contact-form button { width: 100%; min-height: 54px; color: #fff; background: #ed242b; font: inherit; font-weight: 700; cursor: pointer; }
 .contact-form button:hover { background: #ff3d44; }
 .contact-disclosure,.contact-status { margin: 0; color: rgba(255,255,255,.65); font-size: .84rem; }

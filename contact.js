@@ -3,9 +3,9 @@
   if (!form) return;
 
   const requested = new URLSearchParams(window.location.search).get('service');
-  const select = document.getElementById('requestedService');
-  if (requested && [...select.options].some(option => option.value === requested)) {
-    select.value = requested;
+  const description = document.getElementById('serviceDescription');
+  if (requested && description && !description.value) {
+    description.value = `I'm interested in ${requested}.`;
   }
 
   form.addEventListener('submit', (event) => {
@@ -17,15 +17,14 @@
       'Service request from the A-VAC website', '',
       'Name: ' + data.get('name'),
       'Phone: ' + data.get('phone'),
-      'Service: ' + data.get('service'),
-      'Location: ' + data.get('location'),
       'Email: ' + data.get('email'),
-      'Details: ' + data.get('notes'),
+      'Address: ' + data.get('address'),
+      'Description: ' + data.get('description'),
     ].join('\n');
 
     const status = document.getElementById('contactStatus');
     status.hidden = false;
     status.textContent = 'Finish by sending the email in your email app. Your request has not been submitted on this website. If no email app opens, call (832) 318-2256 or email info@avacseptic.com.';
-    window.location.href = 'mailto:info@avacseptic.com?subject=' + encodeURIComponent('A-VAC service request: ' + data.get('service')) + '&body=' + encodeURIComponent(body);
+    window.location.href = 'mailto:info@avacseptic.com?subject=' + encodeURIComponent('A-VAC service request') + '&body=' + encodeURIComponent(body);
   });
 })();
