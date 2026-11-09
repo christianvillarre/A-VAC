@@ -86,6 +86,9 @@ for (const page of pages) {
   if (!html.includes('src="/site-shell.js"')) {
     html = html.replace('</body>', '  <script src="/site-shell.js"></script>\n</body>');
   }
+  if (!html.includes('<!-- Matomo -->')) {
+    html = html.replace('</head>', fs.readFileSync(path.join(__dirname, 'tracking-snippet.txt'), 'utf8') + '</head>');
+  }
   fs.writeFileSync(file, html);
   console.log(`Updated ${page}`);
 }

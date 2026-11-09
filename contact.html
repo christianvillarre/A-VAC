@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact A-VAC Septic | Request Service in Huffman, TX</title>
-  <meta name="description" content="Contact A-VAC Septic to discuss septic pumping, tank cleaning, or septic waste disposal in Huffman and Northeast Houston. Call (832) 318-2256 or prepare a service request by email.">
+  <meta name="description" content="Contact A-VAC Septic to discuss septic pumping, tank cleaning, or septic waste disposal in Huffman and Northeast Houston. Call (832) 318-2256 or send a service request online.">
   <link rel="canonical" href="https://www.avacseptic.com/contact.html">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,28 @@
   }
   </script>
   <link rel="stylesheet" href="/site-shell.css">
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://magnaflow.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '9']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='https://cdn.matomo.cloud/magnaflow.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zb618992nh");
+</script>
 </head>
 <body>
   <a class="services-skip" href="#contactForm">Skip to request form</a>
@@ -58,14 +80,17 @@
   <main id="main">
     <section class="services-hero contact-hero" aria-labelledby="contact-title"><div class="services-wrap services-hero-grid">
       <div class="contact-hero-copy"><p class="services-eyebrow">A-VAC Septic · Huffman, Texas</p><h1 id="contact-title">Let's get your septic service started.</h1><p class="services-lead">Share your contact information, address, and a brief description of what you need. We’ll discuss the work, pricing, and availability with you.</p><div class="contact-note"><strong>Backup or overflow?</strong><p>Call to check the next available service time. If wastewater is backing up, avoid using water until you can speak with a professional.</p><a href="tel:+18323182256">Call (832) 318-2256 ↗</a></div></div>
-      <form class="contact-form" id="contactForm" action="mailto:info@avacseptic.com" method="post" enctype="text/plain" autocomplete="on" aria-labelledby="request-title">
-        <div class="contact-form-heading"><p class="services-eyebrow">Request service</p><h2 id="request-title">Tell us what you need.</h2><p>Fill this in to prepare your email request.</p></div>
+      <form class="contact-form" id="contactForm" method="post" autocomplete="on" aria-labelledby="request-title" name="contact-service-request" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="contact-service-request">
+<p hidden><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="contact-form-heading"><p class="services-eyebrow">Request service</p><h2 id="request-title">Tell us what you need.</h2><p>Complete the form to send your service request.</p></div>
         <div class="contact-form-row"><label>Your name <span aria-hidden="true">*</span><input name="name" autocomplete="name" required maxlength="100" placeholder="Full name"></label><label>Phone number <span aria-hidden="true">*</span><input name="phone" type="tel" autocomplete="tel" required maxlength="30" pattern="[+0-9 .\(\)\-]{7,30}" title="Enter a phone number with at least 7 characters, using numbers and standard phone punctuation." placeholder="(832) 555-0123"></label></div>
         <label>Email <span aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" required maxlength="160" placeholder="you@example.com"></label>
         <label>Address <span aria-hidden="true">*</span><input name="address" autocomplete="street-address" required maxlength="200" placeholder="Street address, city, and ZIP code"></label>
         <label>Description <span aria-hidden="true">*</span><textarea name="description" id="serviceDescription" rows="4" required maxlength="1500" placeholder="Tell us what service you need or what’s happening…"></textarea></label>
-        <button class="services-button" type="submit">Prepare email request <span aria-hidden="true">↗</span></button>
-        <p class="contact-disclosure">This opens your email app with your details filled in. Send the email there to complete your request. Your details are used to respond to your inquiry. <a href="https://www.avacseptic.com/privacy-policy">Privacy policy</a>.</p>
+        <div data-netlify-recaptcha="true"></div>
+<button class="services-button" type="submit">Send service request <span aria-hidden="true">↗</span></button>
+        <p class="contact-disclosure">Your details are used to respond to your inquiry. <a href="https://www.avacseptic.com/privacy-policy">Privacy policy</a>.</p>
         <p id="contactStatus" class="contact-status" role="status" hidden></p>
         <noscript><p>Email <a href="mailto:info@avacseptic.com">info@avacseptic.com</a> or call (832) 318-2256 to request service.</p></noscript>
       </form>
@@ -97,5 +122,6 @@
 <!-- shared:footer:end -->
   <script src="/contact.js"></script>
   <script src="/site-shell.js"></script>
+  <script src="/forms.js"></script>
 </body>
 </html>

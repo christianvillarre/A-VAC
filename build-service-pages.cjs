@@ -120,7 +120,7 @@ function render(page) {
   <link rel="stylesheet" href="/header.css">
   <link rel="stylesheet" href="/services.css">
   <script type="application/ld+json">${JSON.stringify(schema)}</script>
-</head>
+${fs.readFileSync(path.join(__dirname, 'tracking-snippet.txt'), 'utf8')}</head>
 <body>
   <a class="services-skip" href="#main">Skip to content</a>
   <header class="navbar"></header>

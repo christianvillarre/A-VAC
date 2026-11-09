@@ -108,6 +108,14 @@
 }
 </script>
 
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-4eSweTJwGHUXURr7JrRFd.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+  <link rel="stylesheet" href="/site-shell.css">
+  <link rel="stylesheet" href="/hero-motion.css">
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -117,20 +125,19 @@
   (function() {
     var u="https://magnaflow.matomo.cloud/";
     _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
+    _paq.push(['setSiteId', '9']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.async=true; g.src='https://cdn.matomo.cloud/magnaflow.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
 <!-- End Matomo Code -->
- <!-- Privacy-friendly analytics by Plausible -->
-<script async src="https://plausible.io/js/pa-4eSweTJwGHUXURr7JrRFd.js"></script>
-<script>
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init()
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zb618992nh");
 </script>
-  <link rel="stylesheet" href="/site-shell.css">
-  <link rel="stylesheet" href="/hero-motion.css">
 </head>
 
 <body>
@@ -240,14 +247,17 @@
     <div class="av-request-copy"><span class="eyebrow">Let's get you scheduled</span><h2 id="request-title">We’ll take it<br>from here.</h2><a class="av-call" href="tel:+18323182256">Call (832) 318-2256 ↗</a></div>
     <figure class="av-request-photo"><img src="/images/couple_online.jpg" alt="A couple arranging service online" loading="lazy" width="1200" height="800"></figure>
   </div>
-  <form class="av-form" id="requestForm" action="mailto:info@avacseptic.com" method="post" enctype="text/plain" autocomplete="on">
+  <form class="av-form" id="requestForm" method="post" autocomplete="on" name="alternate-service-request" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="alternate-service-request">
+<p hidden><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
    <h3>Request service</h3><p class="av-form-note">Just your name and phone are required.</p>
    <div class="av-fields"><label>Your name <span aria-hidden="true">*</span><input name="name" autocomplete="name" required maxlength="100" placeholder="Full name"></label><label>Phone number <span aria-hidden="true">*</span><input name="phone" type="tel" autocomplete="tel" required maxlength="30" pattern="[+0-9 .\(\)\-]{7,30}" title="Enter a phone number with at least 7 characters, using numbers and standard phone punctuation." placeholder="(832) 555-0123"></label></div>
    <label>What can we help with?<select name="service" id="requestedService"><option>Not sure — help me choose</option><option>Septic pumping &amp; cleaning</option><option>Backup / urgent service</option></select></label>
    <label>City or ZIP code <span class="av-optional">(optional)</span><input name="location" autocomplete="address-level2" maxlength="120" placeholder="Where do you need service?"></label>
    <details class="av-form-details"><summary>Add email or job details <span class="av-optional">(optional)</span></summary><label>Email<input name="email" type="email" autocomplete="email" maxlength="160" placeholder="you@example.com"></label><label>Anything we should know?<textarea name="notes" rows="3" maxlength="1500" placeholder="Access instructions, tank size, or what’s happening…"></textarea></label></details>
-   <button class="av-button" type="submit">Prepare service request <span aria-hidden="true">↗</span></button>
-   <p class="av-small">Opens your email app with your details filled in. Send the email to complete your request. Prefer to talk? <a href="tel:+18323182256">Call us</a>.</p>
+   <div data-netlify-recaptcha="true"></div>
+<button class="av-button" type="submit">Send service request <span aria-hidden="true">↗</span></button>
+   <p class="av-small">Complete the CAPTCHA and send your request securely. Prefer to talk? <a href="tel:+18323182256">Call us</a>.</p>
    <p class="av-small">Your details are used to respond to your inquiry. <a href="https://www.avacseptic.com/privacy-policy">Privacy policy</a>.</p>
    <p id="requestStatus" class="av-status" role="status" hidden></p>
    <noscript><p>Email <a href="mailto:info@avacseptic.com">info@avacseptic.com</a> or call (832) 318-2256 to request service.</p></noscript>
@@ -651,20 +661,7 @@
   document.querySelectorAll('[data-service]').forEach(link => {
     link.addEventListener('click', () => { select.value = link.dataset.service; });
   });
-  // No delivery endpoint is configured. Never claim the request was received.
-  form.addEventListener('submit', event => {
-    event.preventDefault();
-    if (!form.reportValidity()) return;
-    const data = new FormData(form);
-    const body = ['Service request from the A-VAC website', '',
-      'Name: ' + data.get('name'), 'Phone: ' + data.get('phone'),
-      'Service: ' + data.get('service'), 'Location: ' + data.get('location'),
-      'Email: ' + data.get('email'), 'Details: ' + data.get('notes')].join(String.fromCharCode(10));
-    const status = document.getElementById('requestStatus');
-    status.hidden = false;
-    status.textContent = 'Finish by sending the email in your email app. Your request has not been submitted on this website. If no email app opens, call (832) 318-2256 or email info@avacseptic.com.';
-    window.location.href = 'mailto:info@avacseptic.com?subject=' + encodeURIComponent('A-VAC service request: ' + data.get('service')) + '&body=' + encodeURIComponent(body);
-  });
+
 })();
 </script>
   <script>
@@ -744,5 +741,6 @@
 </script>
 
   <script src="/site-shell.js"></script>
+  <script src="/forms.js"></script>
 </body>
 </html>
