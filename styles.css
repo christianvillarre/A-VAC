@@ -538,7 +538,7 @@ html { scroll-padding-top:120px; }
  .av-card>img { height:190px; min-height:0; }
  .av-fields { grid-template-columns:1fr; gap:0; }
  .av-service-links { flex-direction:column; }
- .hero-pinned { display:none; }
+
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
 /* Keep every navigation link reachable on narrow screens. */
@@ -551,4 +551,10 @@ html { scroll-padding-top:120px; }
  .navbar .nav-links { gap:1rem; }
  .navbar .nav-links a { font-size:.8rem; letter-spacing:.05em; }
  .navbar .nav-logo img { width:95px; }
+}
+
+/* Reserve space for the pinned artwork below the stacked mobile hero content. */
+@media (max-width: 979px) {
+  .hero-inner { padding-bottom: clamp(180px, 48vw, 310px); }
+  .hero-pinned { display: block; }
 }
