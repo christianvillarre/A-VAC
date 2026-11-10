@@ -496,7 +496,7 @@ html { scroll-padding-top:120px; }
 .about-inner { width:100%; margin:auto; display:flex; flex-direction:column; gap:3rem; }
 .about-media { width:100%; border-radius:18px; overflow:hidden; background:#082f55; }
 .about-media img { width:100%; height:auto; max-height:560px; object-fit:contain; }
-.about-content { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.2fr); column-gap:clamp(2rem,6vw,5rem); row-gap:1.15rem; align-items:start; }
+.about-content { display:grid; grid-template-columns:minmax(0,1.6fr) minmax(0,1fr); column-gap:clamp(1.5rem,3vw,3rem); row-gap:1.15rem; align-items:start; }
 .about-content .eyebrow { grid-column:1; font-size:.75rem; }
 .about-content h2 { grid-column:1; grid-row:2 / 5; color:#fff; }
 .about-lead,.about-text,.about-points,.about-content>.av-text-link { grid-column:2; }
@@ -598,3 +598,13 @@ html { scroll-padding-top:120px; }
 @media (hover:hover) { .hero-pinned:hover { transform:scale(1.06); } }
 .hero-pinned:focus-visible { outline:3px solid #fff; outline-offset:4px; }
 @media (prefers-reduced-motion:reduce) { .hero-pinned { transition:none; } }
+
+
+/* Let the two-line About heading use the section width above the copy. */
+@media (min-width:901px) {
+  .section-about .about-content h2 { grid-column:1 / -1; grid-row:2; max-width:none; }
+  .section-about .about-lead { grid-row:3; }
+  .section-about .about-text { grid-row:4; }
+  .section-about .about-content > .av-text-link { grid-row:5; }
+  .section-about .about-points { grid-row:6; }
+}

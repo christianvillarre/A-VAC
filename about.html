@@ -106,7 +106,7 @@
       align-items: center;
     }
 
-    .hero-about__content { max-width: 60ch; }
+    .hero-about__content { max-width: 160ch; }
 
     .hero-about__title {
       margin-top: .4rem;
@@ -754,7 +754,9 @@ h1 span { color:#ed242b; }
 .team-card__body { padding:2rem; }
 .team-card__bio,.founders-note__text p { color:#526679; line-height:1.8; }
 .team-card__role { color:#c9232c; font-size:.72rem; }
-.founders-note { background:white; border:1px solid #dce3e5; }
+.founders-note { background:white; border:1px solid #dce3e5; margin-top:0; align-items:flex-start; }
+.founders-note__text h3 { color:#092e50; font-size:clamp(1.1rem,1.6vw,1.35rem); }
+.founders-note__text p { margin-top:1rem; }
 .section-cta { background:#05284d; }
 .site-footer { background:#031b36; }
 .footer-logo { object-fit:contain; object-position:left; }
@@ -831,7 +833,7 @@ h1 span { color:#ed242b; }
 
         <div class="hero-about__content">
           <span class="eyebrow">About A-VAC Septic</span>
-          <h1>Family owned.<br><span>Huffman proud.</span></h1>
+          <h1>Family owned. <span>Huffman proud.</span></h1>
           <p class="hero-about__lead">
             Family-owned for over 30 years, proudly serving Huffman, Crosby,
             Atascocita, Kingwood, and the surrounding Northeast Houston communities
@@ -948,60 +950,25 @@ h1 span { color:#ed242b; }
           <span class="eyebrow">Meet the Team</span>
           <h2>Next-Gen Leaders of A-VAC Septic</h2>
         </header>
-
         <div class="team-grid">
-
-          <!-- Famen -->
           <article class="team-card">
-            <div class="team-card__img-wrap">
-              <div class="team-card__placeholder">FW</div>
-            </div>
+            <div class="team-card__img-wrap"><img src="/images/The Famens.jpg" alt="Famen and Jasmin Wolf" loading="lazy"></div>
             <div class="team-card__body">
-              <h3 class="team-card__name">Famen Wolf</h3>
-              <div class="team-card__role">Business Development Manager</div>
-              <p class="team-card__bio">
-                Carrying on the Wolf family legacy, Famen leads growth and operations
-                with the same work ethic and community-first values that built A-VAC Septic
-                into a household name across Northeast Houston.
-              </p>
+              <h3 class="team-card__name">Famen &amp; Jasmin Wolf</h3>
+              <div class="team-card__role">A-VAC Leadership</div>
+              <p class="team-card__bio"><strong>Famen</strong>, Business Development Manager, leads growth and operations while carrying on the Wolf family legacy.</p>
+              <p class="team-card__bio"><strong>Jasmin</strong>, Sales &amp; Operations Manager, oversees scheduling, customer communication, and service standards.</p>
             </div>
           </article>
-
-          <!-- Jasmin -->
-          <article class="team-card">
-            <div class="team-card__img-wrap">
-              <div class="team-card__placeholder">JW</div>
-            </div>
-            <div class="team-card__body">
-              <h3 class="team-card__name">Jasmin Wolf</h3>
-              <div class="team-card__role">Sales &amp; Operations Manager</div>
-              <p class="team-card__bio">
-                Jasmin keeps the day-to-day running smoothly — from scheduling and customer
-                communication to ensuring every job meets the high standards A-VAC Septic
-                has stood behind for over three decades.
-              </p>
+          <article class="founders-note">
+            <div class="founders-note__text">
+              <h3>Our Founders</h3>
+              <p>A-VAC Septic was founded by <strong>Karla and Fred Wolf</strong>, whose vision and work ethic built a trusted name in the Lake Houston community. Their dedication to honest, quality service remains the cornerstone of everything we do today.</p>
             </div>
           </article>
-
         </div>
-
-        <!-- Founders note -->
-        <div class="founders-note">
-          
-          <div class="founders-note__text">
-            <h4>Our Founders</h4>
-            <p>
-              A-VAC Septic was founded by <strong>Karla and Fred Wolf</strong>, whose vision
-              and work ethic built a trusted name in the Lake Houston community. Their
-              dedication to honest, quality service remains the cornerstone of everything
-              we do today.
-            </p>
-          </div>
-        </div>
-
       </div>
     </section>
-
     <!-- ============================
          CTA
     ============================ -->
