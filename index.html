@@ -150,12 +150,13 @@
 <header class="navbar site-header">
   <div class="navbar-inner">
     <a class="nav-logo" href="/index.html" aria-label="A-VAC Septic home"><img src="/images/logo.png" alt="A-VAC Septic"></a>
-    <nav aria-label="Main navigation">
+    <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="primary-navigation" aria-label="Main navigation">
       <ul class="nav-links">
         <li><a href="/about.html">About</a></li>
         <li class="has-dropdown">
-          <a href="/services.html">Services</a>
-          <div class="dropdown">
+          <a href="/services.html">Services</a><button class="services-expand" type="button" aria-label="Expand services menu" aria-expanded="false" aria-controls="mobile-services"><span aria-hidden="true"></span></button>
+          <div class="dropdown" id="mobile-services">
             <a href="/residential-septic-cleaning.html">Residential Septic Cleaning</a>
             <a href="/commercial-septic-cleaning.html">Commercial Septic Cleaning</a>
             <a href="/septic-pumping.html">Septic Pumping</a>
@@ -200,6 +201,15 @@
       </h1>
 
       <div class="hero-ui">
+        <a class="hero-card" href="#quote">
+          <img class="hero-card__img" src="/images/avac-truck.png" alt="">
+          <div class="hero-card__body">
+            <div class="hero-card__title av-arrow-link">REQUEST SERVICE</div>
+            <p class="hero-card__desc">
+              Professional Septic Services in Huffman, TX and surrounding areas.
+            </p>
+          </div>
+        </a>
         <a class="hero-request-button" href="#quote">Request Service</a>
 
       </div>
@@ -211,10 +221,10 @@
         <img class="hero-truck-img" src="/images/avac-truck.png" alt="">
       </div>
     </div>
-    <div class="hero-pinned" aria-hidden="true">
+  </div>
+  <a class="hero-pinned" href="/contact.html" aria-label="Contact A-VAC Septic">
     <img src="/images/youdumpit_wepumpit.png" alt="">
-  </div>
-  </div>
+  </a>
 
    
 </section>
@@ -685,5 +695,6 @@
 
   <script src="/site-shell.js"></script>
   <script src="/forms.js"></script>
+  <script src="/mobile-menu.js"></script>
 </body>
 </html>

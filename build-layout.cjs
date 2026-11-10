@@ -19,12 +19,13 @@ const header = `<!-- shared:header:start -->
 <header class="navbar site-header">
   <div class="navbar-inner">
     <a class="nav-logo" href="/index.html" aria-label="A-VAC Septic home"><img src="/images/logo.png" alt="A-VAC Septic"></a>
-    <nav aria-label="Main navigation">
+    <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="primary-navigation" aria-label="Main navigation">
       <ul class="nav-links">
         <li><a href="/about.html">About</a></li>
         <li class="has-dropdown">
-          <a href="/services.html">Services</a>
-          <div class="dropdown">
+          <a href="/services.html">Services</a><button class="services-expand" type="button" aria-label="Expand services menu" aria-expanded="false" aria-controls="mobile-services"><span aria-hidden="true"></span></button>
+          <div class="dropdown" id="mobile-services">
             <a href="/residential-septic-cleaning.html">Residential Septic Cleaning</a>
             <a href="/commercial-septic-cleaning.html">Commercial Septic Cleaning</a>
             <a href="/septic-pumping.html">Septic Pumping</a>
@@ -89,6 +90,7 @@ for (const page of pages) {
   if (!html.includes('<!-- Matomo -->')) {
     html = html.replace('</head>', fs.readFileSync(path.join(__dirname, 'tracking-snippet.txt'), 'utf8') + '</head>');
   }
+  if (!html.includes('src="/mobile-menu.js"')) html = html.replace('</body>', '  <script src="/mobile-menu.js"></script>\n</body>');
   fs.writeFileSync(file, html);
   console.log(`Updated ${page}`);
 }

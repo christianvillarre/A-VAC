@@ -651,3 +651,8 @@ html { scroll-padding-top:120px; }
 .av-portal:focus-visible { outline:3px solid var(--av-red); outline-offset:5px; }
 @media(max-width:700px) { .av-services .av-portals { grid-template-columns:1fr; } .av-services .av-portals .av-portal { min-height:380px; } }
 @media(prefers-reduced-motion:reduce) { .av-portal>img { transition:none; } .av-portal:hover>img { transform:none; } }
+
+.hero-pinned { pointer-events:auto; cursor:pointer; transform-origin:bottom right; transition:transform .22s ease; }
+@media (hover:hover) { .hero-pinned:hover { transform:scale(1.06); } }
+.hero-pinned:focus-visible { outline:3px solid #fff; outline-offset:4px; }
+@media (prefers-reduced-motion:reduce) { .hero-pinned { transition:none; } }

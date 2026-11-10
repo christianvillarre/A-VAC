@@ -556,13 +556,13 @@ html { scroll-padding-top:120px; }
 /* Reserve space for the pinned artwork below the stacked mobile hero content. */
 @media (max-width: 979px) {
   .hero-inner { padding-top: calc(clamp(1.75rem, 6vh, 4.75rem) + 24px);
-  padding-bottom: calc(clamp(180px, 48vw, 310px) + 32px); }
+  padding-bottom: calc(clamp(140px, 41vw, 250px) - 80px); }
   .hero-pinned { display: block; }
 }
 
-/* Compact hero action and raised pinned artwork. */
+/* Compact request button is only shown with the mobile hero layout. */
 .hero-request-button {
-  display: inline-flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: fit-content;
@@ -578,4 +578,23 @@ html { scroll-padding-top:120px; }
 }
 .hero-request-button:hover { background: #d51e25; }
 .hero-request-button:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
-.hero-pinned { bottom: 32px; }
+.hero-pinned { bottom: 0; }
+@media (max-width: 979px) {
+  .hero-ui > .hero-card { display: none; }
+  .hero-request-button { display: inline-flex; }
+  .hero-col--content { margin-top: calc(clamp(2rem, 10vh, 5rem) + 48px); }
+}
+
+/* Raise the sun within the shorter mobile hero. */
+@media (max-width: 979px) {
+  .hero-sun { top: calc(22% - 30px); }
+}
+
+@media (min-width: 980px) {
+  .hero-inner { max-width: 1800px; }
+}
+
+.hero-pinned { pointer-events:auto; cursor:pointer; transform-origin:bottom right; transition:transform .22s ease; }
+@media (hover:hover) { .hero-pinned:hover { transform:scale(1.06); } }
+.hero-pinned:focus-visible { outline:3px solid #fff; outline-offset:4px; }
+@media (prefers-reduced-motion:reduce) { .hero-pinned { transition:none; } }
